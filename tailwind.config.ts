@@ -57,6 +57,19 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        brand: {
+          navy: "#243657",
+          "navy-dark": "#131929",
+          blue: "#5170A6",
+          beige: "#EBE5D8",
+          "gray-light": "#E9E9EB",
+          "gray-medium": "#D3D3D3",
+          orange: "#F36D12",
+          "orange-light": "#E2A378",
+          green: "#1E5A27",
+          "green-light": "#4C9155",
+          gold: "#F39C12",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -87,5 +100,5 @@ export default {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
 } satisfies Config;
