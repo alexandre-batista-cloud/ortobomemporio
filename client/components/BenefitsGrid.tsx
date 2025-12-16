@@ -1,4 +1,4 @@
-import { Heart, Spine, Wind, Zap, Settings, Truck } from "lucide-react";
+import { Heart, Shield, Wind, Zap, Settings, Truck } from "lucide-react";
 
 const benefits = [
   {
@@ -7,7 +7,7 @@ const benefits = [
     description: "Reduz pontos de pressão nos ombros e quadril",
   },
   {
-    icon: Spine,
+    icon: Shield,
     title: "Suporte da Coluna",
     description: "Alinhamento correto durante o sono",
   },
