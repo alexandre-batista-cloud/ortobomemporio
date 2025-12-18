@@ -12,7 +12,7 @@ import { FooterMarista } from "@/components/FooterMarista";
 
 export default function MaristaLanding() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white flex flex-col">
       <HeaderMarista />
 
       <HeroMarista />
