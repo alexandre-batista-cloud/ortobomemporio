@@ -23,7 +23,7 @@ export function StoreCard() {
     e.preventDefault();
     const message = `Olá! Meu nome é ${formData.name}. Gostaria de agendar uma visita na loja Ortobom Marista para ${formData.preferredDay} às ${formData.preferredTime || "hora a definir"}. ${formData.immediateContact ? "Quero atendimento imediato no WhatsApp também!" : ""}`;
     const encodedMessage = encodeURIComponent(message);
-    window.open(`https://wa.me/556233260765?text=${encodedMessage}`, "_blank");
+    window.open(`https://wa.me/5562996148873?text=${encodedMessage}`, "_blank");
     setShowBookingForm(false);
   };
 
