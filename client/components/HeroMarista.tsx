@@ -28,7 +28,7 @@ export function HeroMarista() {
 
           {/* Main Heading */}
           <h1 className="text-4xl md:text-5xl font-bold text-brand-navy leading-tight max-w-2xl mr-auto">
-            Seu novo colchão Ortobom está aqui.<br><br><br>
+            Seu novo colchão Ortobom está aqui.
           </h1>
 
           {/* Description */}
