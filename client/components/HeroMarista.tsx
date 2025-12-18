@@ -23,17 +23,11 @@ export function HeroMarista() {
       {/* Content Container */}
       <div className="relative max-w-5xl mx-auto px-4 py-20">
         <div className="flex flex-col gap-8">
-          {/* Logo */}
-          <div className="w-32">
-            <img
-              src="https://ortobomvendasonline.com.br/wp-content/webp-express/webp-images/uploads/2025/07/17274-91476b2da75edc739972c4857ca76c07.png.webp"
-              alt="Ortobom Logo"
-              className="w-full h-auto"
-            />
-          </div>
+          {/* Logo - Empty placeholder */}
+          <div className="w-32" />
 
           {/* Main Heading */}
-          <h1 className="text-4xl md:text-5xl font-bold text-brand-navy leading-tight max-w-2xl">
+          <h1 className="text-4xl md:text-5xl font-bold text-brand-navy leading-tight max-w-2xl mr-auto">
             Seu novo colchão Ortobom está aqui.
           </h1>
 
