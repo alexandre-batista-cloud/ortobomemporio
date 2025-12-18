@@ -1,5 +1,6 @@
 import { HeaderMarista } from "@/components/HeaderMarista";
 import { HeroMarista } from "@/components/HeroMarista";
+import { CampaignCTA } from "@/components/CampaignCTA";
 import { SleepQuiz } from "@/components/SleepQuiz";
 import { BenefitsGrid } from "@/components/BenefitsGrid";
 import { TestimonialsMarista } from "@/components/TestimonialsMarista";
