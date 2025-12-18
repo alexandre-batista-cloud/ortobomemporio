@@ -41,9 +41,9 @@ export function StoreCard() {
             <div className="flex gap-4 mb-6">
               <MapPin className="w-6 h-6 text-brand-blue flex-shrink-0 mt-1" />
               <div>
-                <p className="font-semibold text-brand-navy text-lg">
-                  Em Frente ao Empório Prime
-                </p>
+                <div className="font-semibold text-brand-navy text-lg">
+                  <p>Em Frente ao Empório Prime, ao lado do cartório Silva.</p>
+                </div>
                 <p className="text-gray-700">
                   Avenida 85, 2385 - St. Marista
                 </p>
@@ -56,8 +56,8 @@ export function StoreCard() {
               <Clock className="w-6 h-6 text-brand-blue flex-shrink-0 mt-1" />
               <div>
                 <p className="font-semibold text-brand-navy text-lg">Horários</p>
-                <p className="text-gray-700">Segunda a Sexta: 10h às 20h</p>
-                <p className="text-gray-700">Sábado: 09h às 18h</p>
+                <p><p>Segunda a Sexta: 09h às 19h</p></p>
+                <p><p>Sábado: 09h às 13h</p></p>
                 <p className="text-gray-700">Domingo: Fechado</p>
               </div>
             </div>
