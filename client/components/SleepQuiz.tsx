@@ -129,7 +129,7 @@ export function SleepQuiz() {
 
             <div className="flex flex-col md:flex-row gap-3">
               <a
-                href="https://wa.me/556233260765?text=Recebi%20recomenda%C3%A7%C3%A3o%20de%20colch%C3%A3o%20ideal!%20%F0%9F%91%87"
+                href="https://wa.me/5562996148873?text=Recebi%20recomenda%C3%A7%C3%A3o%20de%20colch%C3%A3o%20ideal!%20%F0%9F%91%87"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex-1 flex items-center justify-center gap-2 bg-brand-green text-white font-bold py-3 rounded-lg hover:bg-green-700 transition-colors"
