@@ -87,7 +87,7 @@ export function FAQAccordion() {
             Ainda tem dúvidas?
           </p>
           <a
-            href="https://wa.me/556233260765?text=Tenho%20uma%20d%C3%BAvida%20sobre%20os%20colch%C3%B5es%20Ortobom"
+            href="https://wa.me/5562996148873?text=Tenho%20uma%20d%C3%BAvida%20sobre%20os%20colch%C3%B5es%20Ortobom"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 bg-brand-green text-white font-bold rounded-lg hover:bg-green-700 transition-colors"
