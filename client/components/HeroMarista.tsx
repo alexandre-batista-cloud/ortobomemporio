@@ -16,7 +16,7 @@ export function HeroMarista() {
         className="absolute inset-0 pointer-events-none"
         style={{
           backgroundImage: "linear-gradient(0deg, rgb(255, 255, 255) 44%, rgba(255, 255, 255, 0) 100%)",
-          opacity: 0.94,
+          opacity: 0.5,
         }}
       />
 
