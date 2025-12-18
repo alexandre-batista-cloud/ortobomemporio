@@ -56,8 +56,8 @@ export function StoreCard() {
               <Clock className="w-6 h-6 text-brand-blue flex-shrink-0 mt-1" />
               <div>
                 <p className="font-semibold text-brand-navy text-lg">Horários</p>
-                <p><p>Segunda a Sexta: 09h às 19h</p></p>
-                <p><p>Sábado: 09h às 13h</p></p>
+                <p className="text-gray-700">Segunda a Sexta: 09h às 19h</p>
+                <p className="text-gray-700">Sábado: 09h às 13h</p>
                 <p className="text-gray-700">Domingo: Fechado</p>
               </div>
             </div>
