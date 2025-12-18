@@ -9,7 +9,6 @@ import { MattressTable } from "@/components/MattressTable";
 import { FAQAccordion } from "@/components/FAQAccordion";
 import { StoreCard } from "@/components/StoreCard";
 import { FooterMarista } from "@/components/FooterMarista";
-import { Calendar, MessageCircle } from "lucide-react";
 
 export default function MaristaLanding() {
   return (
