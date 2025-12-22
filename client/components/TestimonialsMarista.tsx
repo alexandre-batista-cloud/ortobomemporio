@@ -25,12 +25,11 @@ export function TestimonialsMarista() {
     <section className="py-12 md:py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-12">
-          <p className="text-blue-600 font-semibold text-sm uppercase tracking-wide mb-2">
-            Testimonials
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-navy">
-            Proven Outcomes
-          </h2>
+          <h1 className="text-center mb-2">
+            <strong>
+              <em>Veja o que nossos clientes falam</em>
+            </strong>
+          </h1>
         </div>
 
         {/* Testimonials Grid */}
