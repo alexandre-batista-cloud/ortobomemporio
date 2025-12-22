@@ -1,23 +1,21 @@
 const testimonials = [
   {
     id: 1,
-    name: "Richard Kenny",
-    location: "UT",
-    text: "Testimonial 1 goes here - get a testimonial from someone you've worked with or helped who can share their thoughts about you, your products/services, the measurable wins/results they've gotten, or the customer experience you provide.",
+    name: "ERIKA GONZALES",
+    text: "Sou nova na cidade e estava procurando uma loja para comprar minha cama e colchão. Tive a felicidade de encontrar não só produtos incríveis, mas também um atendimento espetacular! Eles são super atenciosos, simpáticos e me ofereceram um colchão de excelente custo-benefício, além de outros produtos de altíssima qualidade. O pagamento foi super facilitado e a entrega aconteceu no mesmo dia. Uma loja maravilhosa, com certeza a melhor da cidade! Recomendo de olhos fechados!",
     image: "https://cdn.builder.io/api/v1/image/assets%2Fc3f87aa31bff43888730edcf4efdccde%2Faff4daf0869b40128d7c24e422bbeae5",
   },
   {
     id: 2,
-    name: "Ben Jennings",
-    location: "ID",
-    text: "Testimonial 2 goes here - get a testimonial from someone you've worked with or helped who can share their thoughts about you, your products/services, the measurable wins/results they've gotten, or the customer experience you provide.",
+    name: "AYALLA MEDEIROS",
+    text: "Está sendo maravilhoso colchão realmente de alta qualidade muito confortável estamos dormindo muito bem desde o primeiro dia a base também é maravilhosa pois tem um material bem reforçado estamos amando muito e com certeza nos tornamos clientes e vamos indicar muito, a sim o atendimento também excelente,na verdade pra mim já do atendimento eu sei se compro ou não e com vocês tivemos uma experiência maravilhosa a entrega também foi muito rápida,pontual realmente serviço de qualidade em tudo muito obrigada que Deus continue abençoando essa empresa ☺️🙏🏼",
     image: "https://cdn.builder.io/api/v1/image/assets%2Fc3f87aa31bff43888730edcf4efdccde%2Faff4daf0869b40128d7c24e422bbeae5",
   },
   {
     id: 3,
-    name: "Bob Summers",
-    location: "CA",
-    text: "Testimonial 3 goes here - get a testimonial from someone you've worked with or helped who can share their thoughts about you, your products/services, the measurable wins/results they've gotten, or the customer experience you provide.",
+    name: "FERNANDA MAKIS",
+    location: "LOCAL GUIDE",
+    text: "Eu recomendo essa loja não apenas pela qualidade dos produtos, mas também pelo atendimento e entrega rápida. O pessoal cumpre com o que promete, são muito simpáticos, profissionais e te ajudam na escolha do produto, independente do valor que você gastará na loja. Parabéns pessoal.",
     image: "https://cdn.builder.io/api/v1/image/assets%2Fc3f87aa31bff43888730edcf4efdccde%2Faff4daf0869b40128d7c24e422bbeae5",
   },
 ];
