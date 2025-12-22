@@ -72,48 +72,69 @@ export function HeaderMarista() {
       {/* Mobile Header + Bottom Bar */}
       <div className="md:hidden">
         {/* Top Bar */}
-        <header className="fixed top-0 left-0 right-0 z-40 bg-white shadow-sm h-14 flex items-center justify-between px-4">
+        <header className="fixed top-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md shadow-sm h-16 flex items-center justify-between px-4">
           <Link to="/" className="flex items-center gap-2 flex-shrink-0">
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/a5ab8e5671a312f670c806f212a55d815ddc96dc?width=295"
               alt="Ortobom"
-              className="h-5 w-auto"
+              className="h-6 w-auto"
             />
-            <h2 className="text-xs font-semibold text-brand-navy">Empório Marista</h2>
+            <div className="flex flex-col leading-tight">
+              <h1 className="text-xs font-bold text-brand-navy">Ortobom</h1>
+              <h2 className="text-xs font-semibold text-brand-blue">Marista</h2>
+            </div>
           </Link>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="p-2 text-brand-navy"
+            className="p-2 text-brand-navy hover:bg-gray-100 rounded-lg transition-colors"
           >
-            <Menu className="w-6 h-6" />
+            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </header>
 
+        {/* Mobile Menu */}
+        {mobileMenuOpen && (
+          <div className="fixed top-16 left-0 right-0 z-30 bg-white border-b border-gray-100 animate-slide-down">
+            <nav className="flex flex-col p-4 gap-3">
+              {navLinks.map((link) => (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  className="text-sm font-medium text-gray-700 px-4 py-2 hover:bg-gray-50 rounded-lg transition-colors"
+                  onClick={() => setMobileMenuOpen(false)}
+                >
+                  {link.label}
+                </a>
+              ))}
+            </nav>
+          </div>
+        )}
+
         {/* Mobile Bottom CTA Bar */}
-        <div className="fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-brand-gray-light flex gap-2 p-3">
+        <div className="fixed bottom-0 left-0 right-0 z-40 bg-white border-t border-gray-100 flex gap-2 p-3 shadow-lg">
           <a
-            href="https://wa.me/5562996148873?text=Oi!%20Vim%20pela%20landing%20page%20da%20Ortobom%20Marista.%20Quero%20ajuda%20para%20escolher%20meu%20colch%C3%A3o%20ideal%20e%20entender%20as%20condi%C3%A7%C3%B5es%20do%20Sonhos%20de%20Natal%20%F0%9F%98%8A"
+            href="https://wa.me/5562996148873?text=Oi!%20Vim%20pela%20landing%20page%20da%20Ortobom%20Marista.%20Quero%20ajuda%20para%20escolher%20meu%20colch%C3%A3o%20ideal"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex-1 flex items-center justify-center gap-2 bg-brand-green text-white py-3 rounded-lg font-semibold text-sm hover:bg-green-700 transition-colors"
+            className="flex-1 flex items-center justify-center gap-2 bg-brand-green text-white py-3 rounded-lg font-semibold text-sm hover:bg-green-700 transition-all duration-200 transform active:scale-95"
           >
             <MessageCircle className="w-4 h-4" />
             WhatsApp
           </a>
           <button
             onClick={() => document.getElementById("booking-form")?.scrollIntoView({ behavior: "smooth" })}
-            className="flex-1 bg-brand-blue text-white py-3 rounded-lg font-semibold text-sm hover:bg-blue-700 transition-colors"
+            className="flex-1 bg-brand-blue text-white py-3 rounded-lg font-semibold text-sm hover:bg-blue-700 transition-all duration-200 transform active:scale-95"
           >
             Agendar
           </button>
         </div>
 
         {/* Spacer for header and bottom bar */}
-        <div className="h-14" />
+        <div className="h-20" />
       </div>
 
       {/* Desktop spacer */}
-      <div className="hidden md:block h-16" />
+      <div className="hidden md:block h-20" />
     </>
   );
 }
