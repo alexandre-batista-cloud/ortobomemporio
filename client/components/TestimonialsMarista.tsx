@@ -52,7 +52,9 @@ export function TestimonialsMarista() {
 
               {/* Name and Location */}
               <p className="font-bold text-brand-navy text-sm uppercase tracking-wide">
-                {testimonial.name}, {testimonial.location}
+                {testimonial.name}
+                {testimonial.location && <><br /><br /></>}
+                {testimonial.location && testimonial.location}
               </p>
             </div>
           ))}
