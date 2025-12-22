@@ -10,13 +10,14 @@ export function HeaderMarista() {
       {/* Desktop Header */}
       <header className="hidden md:block fixed top-0 left-0 right-0 z-40 bg-white shadow-sm">
         <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-          {/* Logo */}
-          <Link to="/" className="flex-shrink-0">
+          {/* Logo + Branding */}
+          <Link to="/" className="flex items-center gap-2 flex-shrink-0">
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/a5ab8e5671a312f670c806f212a55d815ddc96dc?width=295"
               alt="Ortobom"
               className="h-6 w-auto"
             />
+            <h2 className="text-sm font-semibold text-brand-navy">Empório Marista</h2>
           </Link>
 
           {/* Store Location + WhatsApp */}
@@ -48,12 +49,13 @@ export function HeaderMarista() {
       <div className="md:hidden">
         {/* Top Bar */}
         <header className="fixed top-0 left-0 right-0 z-40 bg-white shadow-sm h-14 flex items-center justify-between px-4">
-          <Link to="/" className="flex-shrink-0">
+          <Link to="/" className="flex items-center gap-2 flex-shrink-0">
             <img
               src="https://api.builder.io/api/v1/image/assets/TEMP/a5ab8e5671a312f670c806f212a55d815ddc96dc?width=295"
               alt="Ortobom"
               className="h-5 w-auto"
             />
+            <h2 className="text-xs font-semibold text-brand-navy">Empório Marista</h2>
           </Link>
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
