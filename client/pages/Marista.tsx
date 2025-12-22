@@ -4,7 +4,6 @@ import { CampaignCTA } from "@/components/CampaignCTA";
 import { SleepQuiz } from "@/components/SleepQuiz";
 import { BenefitsGrid } from "@/components/BenefitsGrid";
 import { TestimonialsMarista } from "@/components/TestimonialsMarista";
-import { OfferBlock } from "@/components/OfferBlock";
 import { HowItWorks } from "@/components/HowItWorks";
 import { MattressTable } from "@/components/MattressTable";
 import { FAQAccordion } from "@/components/FAQAccordion";
@@ -25,8 +24,6 @@ export default function MaristaLanding() {
       <BenefitsGrid />
 
       <TestimonialsMarista />
-
-      <OfferBlock />
 
       <HowItWorks />
 

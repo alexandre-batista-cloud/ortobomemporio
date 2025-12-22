@@ -42,7 +42,7 @@ export function StoreCard() {
               <MapPin className="w-6 h-6 text-brand-blue flex-shrink-0 mt-1" />
               <div>
                 <div className="font-semibold text-brand-navy text-lg">
-                  <p>Em Frente ao Empório Prime, ao lado do cartório Silva.</p>
+                  <p>Em Frente ao Empório Prime, ao lado do Cartório Silva em Goiânia.</p>
                 </div>
                 <p className="text-gray-700">
                   Avenida 85, 2385 - St. Marista
