@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { MapPin, Clock, MessageCircle, Calendar, X } from "lucide-react";
+import { StoreGallery } from "./StoreGallery";
 
 export function StoreCard() {
   const [showBookingForm, setShowBookingForm] = useState(false);
@@ -62,8 +63,14 @@ export function StoreCard() {
               </div>
             </div>
 
+            {/* Store Gallery */}
+            <div className="border-t pt-8 mt-8">
+              <h3 className="text-xl font-semibold text-brand-navy mb-4">Conheça nossa loja</h3>
+              <StoreGallery />
+            </div>
+
             {/* Buttons */}
-            <div className="flex flex-col md:flex-row gap-4">
+            <div className="flex flex-col md:flex-row gap-4 mt-8">
               <a
                 href="https://maps.app.goo.gl/ET9kAgcG1nRUhWj26"
                 target="_blank"
