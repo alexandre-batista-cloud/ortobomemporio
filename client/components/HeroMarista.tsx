@@ -33,17 +33,17 @@ export function HeroMarista() {
           </div>
 
           {/* Main Heading */}
-          <h1 className="animate-slide-up text-5xl md:text-6xl lg:text-7xl font-bold text-brand-navy leading-tight">
+          <h1 className="animate-slide-up text-5xl md:text-6xl lg:text-7xl font-bold text-brand-navy leading-tight" style={{ marginTop: "-3px" }}>
             Seu novo colchão Ortobom está aqui.
           </h1>
 
           {/* Description */}
-          <p className="animate-slide-up text-lg md:text-xl text-gray-700 max-w-2xl" style={{ animationDelay: "0.1s" }}>
+          <p className="animate-slide-up text-lg md:text-xl text-gray-700 max-w-2xl" style={{ animationDelay: "0.1s", marginTop: "-3px" }}>
             Colchões Ortobom com conforto de hotel 5 estrelas ao seu alcance.
           </p>
 
           {/* Social Proof Metrics */}
-          <div className="animate-slide-up flex flex-wrap gap-6 py-4" style={{ animationDelay: "0.2s" }}>
+          <div className="animate-slide-up flex flex-wrap gap-6 py-4" style={{ animationDelay: "0.2s", marginTop: "-3px" }}>
             <div className="flex items-center gap-2">
               <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" />
               <span className="text-sm font-semibold text-gray-700">4.9 (122 avaliações)</span>
@@ -54,28 +54,6 @@ export function HeroMarista() {
             </div>
           </div>
 
-          {/* CTA Buttons */}
-          <div className="animate-slide-up flex flex-col sm:flex-row gap-4 pt-4" style={{ animationDelay: "0.3s" }}>
-            {/* Schedule Button */}
-            <button
-              onClick={() => document.getElementById("booking-form")?.scrollIntoView({ behavior: "smooth" })}
-              className="px-8 py-4 bg-brand-blue text-white font-bold rounded-lg hover:bg-blue-700 transition-all duration-200 inline-flex items-center justify-center gap-2 text-base shadow-lg hover:shadow-xl transform hover:scale-105 active:scale-95"
-            >
-              <Calendar className="w-5 h-5" />
-              Agendar Visita
-            </button>
-
-            {/* WhatsApp Button */}
-            <a
-              href="https://wa.me/5562996148873?text=Oi!%20Gostaria%20de%20falar%20com%20um%20Consultor%20de%20vendas%20Ortobom."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="px-8 py-4 border-2 border-brand-navy text-brand-navy font-bold rounded-lg hover:bg-brand-navy hover:text-white transition-all duration-200 inline-flex items-center justify-center gap-2 text-base transform hover:scale-105 active:scale-95"
-            >
-              <MessageCircle className="w-5 h-5" />
-              Falar com Consultor
-            </a>
-          </div>
         </div>
       </div>
     </section>
