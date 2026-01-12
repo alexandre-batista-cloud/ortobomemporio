@@ -181,8 +181,8 @@ export function TestimonialsMarista() {
                 Consultoria Especializada
               </h4>
               <p className="text-gray-600 text-sm">
-                Consultores com 10+ anos de experiência para ajudar na escolha
-                perfeita
+                <strong>Consultores com 10+ anos de experiência</strong> para
+                ajudar na escolha perfeita
               </p>
             </div>
           </div>
@@ -194,8 +194,9 @@ export function TestimonialsMarista() {
                 Localização Estratégica
               </h4>
               <p className="text-gray-600 text-sm">
-                Centro do Marista com estacionamento coberto. Líder em qualidade
-                em Goiás
+                Loja sofisticada no Centro do Marista há <strong>20 anos</strong>{" "}
+                com atendimento humanizado, estacionamento coberto. Líder em
+                qualidade em Goiás
               </p>
             </div>
 
