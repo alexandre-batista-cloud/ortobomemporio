@@ -129,8 +129,10 @@ export function TestimonialsMarista() {
               <div className="text-4xl mb-3">⚡</div>
               <h4 className="font-bold text-brand-navy mb-2">Entrega Rápida</h4>
               <p className="text-gray-600 text-sm">
-                Entrega ágil com prazos muito mais curtos que o site oficial da
-                Ortobom
+                <p>
+                  Entrega ágil em <strong>caminhão baú</strong> com prazos
+                  muito mais curtos que o site oficial da Ortobom
+                </p>
               </p>
             </div>
 
