@@ -142,8 +142,10 @@ export function TestimonialsMarista() {
                 Produtos Fresquinhos
               </h4>
               <p className="text-gray-600 text-sm">
-                Todos os colchões saem da fábrica com menos de uma semana de
-                fabricação
+                <p>
+                  Colchões saem da fábrica com duas semanas em média de
+                  fabricação
+                </p>
               </p>
             </div>
 
