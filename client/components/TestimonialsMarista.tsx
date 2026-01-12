@@ -159,10 +159,8 @@ export function TestimonialsMarista() {
               <div className="text-4xl mb-3">⚡</div>
               <h4 className="font-bold text-brand-navy mb-2">Entrega Rápida</h4>
               <p className="text-gray-600 text-sm">
-                <p>
-                  Entrega ágil em <strong>caminhão baú</strong> com prazos
-                  muito mais curtos que o site oficial da Ortobom
-                </p>
+                Entrega ágil em <strong>caminhão baú</strong> com prazos
+                muito mais curtos que o site oficial da Ortobom
               </p>
             </div>
 
@@ -172,10 +170,8 @@ export function TestimonialsMarista() {
                 Produtos Fresquinhos
               </h4>
               <p className="text-gray-600 text-sm">
-                <p>
-                  Colchões saem da fábrica com duas semanas em média de
-                  fabricação
-                </p>
+                Colchões saem da fábrica com duas semanas em média de
+                fabricação
               </p>
             </div>
 
