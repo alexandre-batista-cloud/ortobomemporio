@@ -159,8 +159,8 @@ export function TestimonialsMarista() {
               <div className="text-4xl mb-3">⚡</div>
               <h4 className="font-bold text-brand-navy mb-2">Entrega Rápida</h4>
               <p className="text-gray-600 text-sm">
-                Entrega ágil em <strong>caminhão baú</strong> com prazos
-                muito mais curtos que o site oficial da Ortobom
+                Entrega ágil em <strong>caminhão baú</strong> com prazos muito
+                mais curtos que o site oficial da Ortobom
               </p>
             </div>
 
@@ -170,8 +170,7 @@ export function TestimonialsMarista() {
                 Produtos Fresquinhos
               </h4>
               <p className="text-gray-600 text-sm">
-                Colchões saem da fábrica com duas semanas em média de
-                fabricação
+                Colchões saem da fábrica com duas semanas em média de fabricação
               </p>
             </div>
 
@@ -194,9 +193,9 @@ export function TestimonialsMarista() {
                 Localização Estratégica
               </h4>
               <p className="text-gray-600 text-sm">
-                Loja sofisticada no Centro do Marista há <strong>20 anos</strong>{" "}
-                com atendimento humanizado, estacionamento coberto. Líder em
-                qualidade em Goiás
+                Loja sofisticada no Centro do Marista há{" "}
+                <strong>20 anos</strong> com atendimento humanizado,
+                estacionamento coberto. Líder em qualidade em Goiás
               </p>
             </div>
 
