@@ -227,8 +227,22 @@ export function TestimonialsMarista() {
                 key={product.name}
                 className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-4 text-center hover:shadow-md transition-shadow"
               >
-                <div className="text-3xl mb-2">{product.icon}</div>
-                <p className="font-semibold text-brand-navy text-sm">
+                <img
+                  loading="lazy"
+                  alt={product.alt}
+                  src={product.image}
+                  style={{
+                    aspectRatio: "1",
+                    objectFit: "cover",
+                    objectPosition: "center",
+                    width: "100%",
+                    marginTop: "20px",
+                    minHeight: "20px",
+                    minWidth: "20px",
+                    overflow: "hidden",
+                  }}
+                />
+                <p className="font-semibold text-brand-navy text-sm mt-2">
                   {product.name}
                 </p>
               </div>
