@@ -5,7 +5,7 @@ const testimonials = [
     id: 1,
     name: "JOÃO SILVA",
     rating: 5,
-    text: "Comprei um Pillow Top aqui na loja e a qualidade é impressionante. Excelente custo-benefício comparado a outras lojas. A equipe é super atenciosa e ajudou bastante na escolha. Entrega rápida, chegou em 2 dias!",
+    text: "Comprei um Pillow Top aqui na loja e a qualidade é impressionante. Excelente custo-benefício comparado a outras lojas. A equipe é super atenciosa e ajudou bastante na escolha. Entrega rápida no mesmo dia!",
     image:
       "https://cdn.builder.io/api/v1/image/assets%2Fc3f87aa31bff43888730edcf4efdccde%2Faff4daf0869b40128d7c24e422bbeae5",
   },
