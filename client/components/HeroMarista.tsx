@@ -3,7 +3,7 @@ import { MessageCircle, Calendar, Star, Zap } from "lucide-react";
 export function HeroMarista() {
   return (
     <section
-      className="relative w-full bg-white overflow-hidden pt-20 md:pt-24 pb-12 md:pb-20"
+      className="relative w-full bg-white overflow-hidden"
       style={{
         backgroundImage:
           "url('https://cdn.builder.io/api/v1/image/assets%2Fc3f87aa31bff43888730edcf4efdccde%2F7b02c97ed6f14e8f839c40fbfb76f290?format=webp&width=800')",
@@ -11,6 +11,7 @@ export function HeroMarista() {
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "scroll",
         backgroundSize: "cover",
+        padding: "96px 0 167px",
       }}
     >
       {/* Gradient Overlay */}
@@ -25,7 +26,7 @@ export function HeroMarista() {
 
       {/* Content Container */}
       <div className="relative max-w-6xl mx-auto px-4 md:px-6">
-        <div className="flex flex-col gap-6 md:gap-8 max-w-3xl">
+        <div className="flex flex-col max-w-3xl" style={{ gap: "68px", justifyContent: "flex-start" }}>
           {/* Badge */}
           <div className="animate-fade-in inline-flex items-center gap-2 px-4 py-2 bg-yellow-50 border border-yellow-200 rounded-full w-fit">
             <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
