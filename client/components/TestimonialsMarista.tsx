@@ -6,21 +6,24 @@ const testimonials = [
     name: "JOÃO SILVA",
     rating: 5,
     text: "Comprei um Pillow Top aqui na loja e a qualidade é impressionante. Excelente custo-benefício comparado a outras lojas. A equipe é super atenciosa e ajudou bastante na escolha. Entrega rápida, chegou em 2 dias!",
-    image: "https://cdn.builder.io/api/v1/image/assets%2Fc3f87aa31bff43888730edcf4efdccde%2Faff4daf0869b40128d7c24e422bbeae5",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2Fc3f87aa31bff43888730edcf4efdccde%2Faff4daf0869b40128d7c24e422bbeae5",
   },
   {
     id: 2,
     name: "MARIA SANTOS",
     rating: 5,
     text: "Adorei o atendimento! Tem estacionamento coberto, fica bem localizado no Marista. Comprei um Colchão Liberty e durmo maravilhosamente bem. Recomendo demais, voltarei com certeza.",
-    image: "https://cdn.builder.io/api/v1/image/assets%2Fc3f87aa31bff43888730edcf4efdccde%2Faff4daf0869b40128d7c24e422bbeae5",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2Fc3f87aa31bff43888730edcf4efdccde%2Faff4daf0869b40128d7c24e422bbeae5",
   },
   {
     id: 3,
     name: "CARLOS OLIVEIRA",
     rating: 5,
     text: "Melhor loja de colchões de Goiás! Os produtos são fresquinhos, saem da fábrica com menos de uma semana. A entrega foi super rápida, muito melhor que encomendar pelo site. Consultores muito experientes!",
-    image: "https://cdn.builder.io/api/v1/image/assets%2Fc3f87aa31bff43888730edcf4efdccde%2Faff4daf0869b40128d7c24e422bbeae5",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2Fc3f87aa31bff43888730edcf4efdccde%2Faff4daf0869b40128d7c24e422bbeae5",
   },
 ];
 
@@ -83,7 +86,11 @@ export function TestimonialsMarista() {
               <div className="mb-4 flex justify-center">
                 <div className="w-20 h-20 rounded-full bg-brand-blue flex items-center justify-center border-4 border-white shadow-md">
                   <span className="text-white font-bold text-lg">
-                    {testimonial.name.split(' ').slice(0, 2).map((word) => word[0]).join('')}
+                    {testimonial.name
+                      .split(" ")
+                      .slice(0, 2)
+                      .map((word) => word[0])
+                      .join("")}
                   </span>
                 </div>
               </div>
@@ -122,23 +129,30 @@ export function TestimonialsMarista() {
               <div className="text-4xl mb-3">⚡</div>
               <h4 className="font-bold text-brand-navy mb-2">Entrega Rápida</h4>
               <p className="text-gray-600 text-sm">
-                Entrega ágil com prazos muito mais curtos que o site oficial da Ortobom
+                Entrega ágil com prazos muito mais curtos que o site oficial da
+                Ortobom
               </p>
             </div>
 
             <div className="text-center">
               <div className="text-4xl mb-3">✨</div>
-              <h4 className="font-bold text-brand-navy mb-2">Produtos Fresquinhos</h4>
+              <h4 className="font-bold text-brand-navy mb-2">
+                Produtos Fresquinhos
+              </h4>
               <p className="text-gray-600 text-sm">
-                Todos os colchões saem da fábrica com menos de uma semana de fabricação
+                Todos os colchões saem da fábrica com menos de uma semana de
+                fabricação
               </p>
             </div>
 
             <div className="text-center">
               <div className="text-4xl mb-3">👨‍💼</div>
-              <h4 className="font-bold text-brand-navy mb-2">Consultoria Especializada</h4>
+              <h4 className="font-bold text-brand-navy mb-2">
+                Consultoria Especializada
+              </h4>
               <p className="text-gray-600 text-sm">
-                Consultores com 10+ anos de experiência para ajudar na escolha perfeita
+                Consultores com 10+ anos de experiência para ajudar na escolha
+                perfeita
               </p>
             </div>
           </div>
@@ -146,15 +160,20 @@ export function TestimonialsMarista() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
             <div className="text-center">
               <div className="text-4xl mb-3">🏪</div>
-              <h4 className="font-bold text-brand-navy mb-2">Localização Estratégica</h4>
+              <h4 className="font-bold text-brand-navy mb-2">
+                Localização Estratégica
+              </h4>
               <p className="text-gray-600 text-sm">
-                Centro do Marista com estacionamento coberto. Líder em qualidade em Goiás
+                Centro do Marista com estacionamento coberto. Líder em qualidade
+                em Goiás
               </p>
             </div>
 
             <div className="text-center">
               <div className="text-4xl mb-3">💰</div>
-              <h4 className="font-bold text-brand-navy mb-2">Excelente Custo-Benefício</h4>
+              <h4 className="font-bold text-brand-navy mb-2">
+                Excelente Custo-Benefício
+              </h4>
               <p className="text-gray-600 text-sm">
                 Qualidade superior com preços competitivos em loja física
               </p>
