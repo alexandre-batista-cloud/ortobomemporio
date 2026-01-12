@@ -29,9 +29,9 @@ export function HeroMarista() {
           {/* Badge */}
           <div className="animate-fade-in inline-flex items-center gap-2 px-4 py-2 bg-yellow-50 border border-yellow-200 rounded-full w-fit">
             <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
-            <span className="text-sm font-semibold text-yellow-900">
-              Melhor loja de colchões de Goiás
-            </span>
+            <p className="text-sm font-semibold text-yellow-900">
+              Loja bem Avaliada em Goiânia
+            </p>
           </div>
 
           {/* Main Heading */}
