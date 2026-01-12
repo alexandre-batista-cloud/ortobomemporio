@@ -5,10 +5,11 @@ export function HeroMarista() {
     <section
       className="relative w-full bg-white overflow-hidden pt-20 md:pt-24 pb-12 md:pb-20"
       style={{
-        backgroundImage: "url('https://ortobomvendasonline.com.br/wp-content/uploads/2025/07/Imagem-1.png')",
-        backgroundPosition: "-8px -135px",
+        backgroundImage: "url('https://cdn.builder.io/api/v1/image/assets%2Fc3f87aa31bff43888730edcf4efdccde%2F7b02c97ed6f14e8f839c40fbfb76f290?format=webp&width=800')",
+        backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "scroll",
+        backgroundSize: "cover",
       }}
     >
       {/* Gradient Overlay */}
