@@ -79,13 +79,13 @@ export function TestimonialsMarista() {
               key={testimonial.id}
               className="bg-gray-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow"
             >
-              {/* Profile Image */}
+              {/* Profile Avatar with Initials */}
               <div className="mb-4 flex justify-center">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="w-20 h-20 rounded-full object-cover border-4 border-white shadow-md"
-                />
+                <div className="w-20 h-20 rounded-full bg-brand-blue flex items-center justify-center border-4 border-white shadow-md">
+                  <span className="text-white font-bold text-lg">
+                    {testimonial.name.split(' ').slice(0, 2).map((word) => word[0]).join('')}
+                  </span>
+                </div>
               </div>
 
               {/* Rating */}
