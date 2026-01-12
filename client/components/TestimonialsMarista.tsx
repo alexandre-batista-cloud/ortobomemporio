@@ -28,12 +28,42 @@ const testimonials = [
 ];
 
 const popularProducts = [
-  { name: "Pillow Top", icon: "🛏️" },
-  { name: "Colchão Liberty", icon: "✨" },
-  { name: "Bellona", icon: "👑" },
-  { name: "Absolut", icon: "💎" },
-  { name: "SuperPocket", icon: "🌟" },
-  { name: "Orthopur", icon: "🏥" },
+  {
+    name: "Pillow Top",
+    alt: "Pillow top HR Gel Ortobom",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2Fc3f87aa31bff43888730edcf4efdccde%2Fd612ffb81afb40adbf56d9a083357262",
+  },
+  {
+    name: " Liberty",
+    alt: "Colchão Liberty Ortobom",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2Fc3f87aa31bff43888730edcf4efdccde%2F35cfbd1b8406494f89f2c56d1294b29a",
+  },
+  {
+    name: "Bellona",
+    alt: "Colchão Bellona Ortobom",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2Fc3f87aa31bff43888730edcf4efdccde%2Fcecb727b71944c3fa60deea0f0a97c42",
+  },
+  {
+    name: "Absolut",
+    alt: "Colchão Absolut Ortobom",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2Fc3f87aa31bff43888730edcf4efdccde%2F26fb647258c84aef8a6ab615f427af3f",
+  },
+  {
+    name: "Orion",
+    alt: "Colchão Orion Ortobom",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2Fc3f87aa31bff43888730edcf4efdccde%2F2ff3b176dad548aba8b2d4a1f4420879",
+  },
+  {
+    name: "Orthopur",
+    alt: "Colchão Orthopur Ortobom",
+    image:
+      "https://cdn.builder.io/api/v1/image/assets%2Fc3f87aa31bff43888730edcf4efdccde%2Fb26547b6fd724279a04732f61b7e72be",
+  },
 ];
 
 export function TestimonialsMarista() {
