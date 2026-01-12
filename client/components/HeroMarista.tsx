@@ -64,7 +64,7 @@ export function HeroMarista() {
             <div className="flex items-center gap-2">
               <Zap className="w-5 h-5 text-brand-green" />
               <span className="text-sm font-semibold text-gray-700">
-                Entrega em 2 dias
+                Entrega em 1 dia
               </span>
             </div>
           </div>
