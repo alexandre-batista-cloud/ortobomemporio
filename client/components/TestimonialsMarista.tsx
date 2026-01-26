@@ -68,29 +68,32 @@ const popularProducts = [
 
 export function TestimonialsMarista() {
   return (
-    <section className="py-16 md:py-24 bg-white">
-      <div className="max-w-6xl mx-auto px-4">
+    <section className="py-20 md:py-28 bg-gradient-to-b from-white to-blue-50">
+      <div className="max-w-6xl mx-auto px-4 md:px-6">
         {/* Header with Google Rating */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-4">
-            Histórias Reais de Goiânia
+        <div className="text-center mb-20">
+          <h2 className="animate-fade-in text-4xl md:text-5xl font-bold text-brand-navy mb-4">
+            O que Nossos Clientes Dizem
           </h2>
-          <p className="text-gray-600 text-lg mb-6">
-            Veja o que nossos clientes falam
+          <p className="text-gray-700 text-lg md:text-xl mb-10">
+            Depoimentos reais de clientes satisfeitos do Ortobom Empório Marista
           </p>
 
-          {/* Google Rating Badge */}
-          <div className="flex items-center justify-center gap-2 mb-8">
+          {/* Google Rating Badge - Enhanced */}
+          <div className="inline-flex items-center justify-center gap-4 bg-white rounded-full px-8 py-4 shadow-lg border border-yellow-100 mb-8">
             <div className="flex gap-1">
               {[...Array(5)].map((_, i) => (
                 <Star
                   key={i}
-                  className="w-6 h-6 fill-yellow-400 text-yellow-400"
+                  className="w-6 h-6 fill-yellow-400 text-yellow-400 animate-fade-in"
+                  style={{ animationDelay: `${i * 50}ms` }}
                 />
               ))}
             </div>
-            <span className="text-2xl font-bold text-brand-navy">4.9</span>
-            <span className="text-gray-600 ml-2">122 avaliações no Google</span>
+            <div>
+              <span className="text-3xl font-bold text-brand-navy">4.9</span>
+              <span className="text-gray-600 text-sm ml-2 block">122 avaliações</span>
+            </div>
           </div>
 
           {/* Link to Google Reviews */}
@@ -98,24 +101,28 @@ export function TestimonialsMarista() {
             href="https://www.google.com/maps/place/Ortobom+Emp%C3%B3rio+Marista/@-16.7026872,-49.2641467,17z/data=!4m8!3m7!1s0x935ef169780fffff:0xb5b57f239e56c7d2!8m2!3d-16.702684!4d-49.264068!9m1!1b1!16s%2Fg%2F1tfs24f3?entry=ttu"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold"
+            className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 font-semibold hover:underline transition-colors"
           >
-            Ver todas as avaliações no Google
+            Ver todas as avaliações
             <ExternalLink className="w-4 h-4" />
           </a>
         </div>
 
         {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-          {testimonials.map((testimonial) => (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20">
+          {testimonials.map((testimonial, index) => (
             <div
               key={testimonial.id}
-              className="bg-gray-50 rounded-lg p-6 text-center hover:shadow-lg transition-shadow"
+              className="group relative bg-white rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-200 animate-slide-up"
+              style={{ animationDelay: `${index * 100}ms` }}
             >
+              {/* Decorative top accent */}
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-brand-blue to-brand-green rounded-t-2xl" />
+
               {/* Profile Avatar with Initials */}
-              <div className="mb-4 flex justify-center">
-                <div className="w-20 h-20 rounded-full bg-brand-blue flex items-center justify-center border-4 border-white shadow-md">
-                  <span className="text-white font-bold text-lg">
+              <div className="mb-6 flex justify-center">
+                <div className="w-20 h-20 rounded-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center border-4 border-white shadow-lg group-hover:shadow-xl transition-shadow">
+                  <span className="text-white font-bold text-xl">
                     {testimonial.name
                       .split(" ")
                       .slice(0, 2)
@@ -126,22 +133,23 @@ export function TestimonialsMarista() {
               </div>
 
               {/* Rating */}
-              <div className="flex justify-center gap-1 mb-4">
+              <div className="flex justify-center gap-1 mb-6">
                 {[...Array(testimonial.rating)].map((_, i) => (
                   <Star
                     key={i}
-                    className="w-4 h-4 fill-yellow-400 text-yellow-400"
+                    className="w-5 h-5 fill-yellow-400 text-yellow-400 animate-fade-in"
+                    style={{ animationDelay: `${i * 50}ms` }}
                   />
                 ))}
               </div>
 
               {/* Testimonial Text */}
-              <p className="text-gray-700 text-sm leading-relaxed mb-4">
+              <p className="text-gray-700 text-base leading-relaxed mb-6 min-h-24">
                 "{testimonial.text}"
               </p>
 
               {/* Name */}
-              <p className="font-bold text-brand-navy text-sm">
+              <p className="font-bold text-brand-navy text-sm uppercase tracking-wide">
                 {testimonial.name}
               </p>
             </div>
