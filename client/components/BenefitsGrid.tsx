@@ -35,31 +35,46 @@ const benefits = [
 
 export function BenefitsGrid() {
   return (
-    <section className="py-12 md:py-16 bg-brand-beige">
-      <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-brand-navy text-center mb-12">
-          Por que escolher Ortobom?
-        </h2>
+    <section className="py-20 md:py-24 bg-gradient-to-b from-brand-beige to-white">
+      <div className="max-w-6xl mx-auto px-4 md:px-6">
+        {/* Section Header */}
+        <div className="text-center mb-16 md:mb-20">
+          <h2 className="text-4xl md:text-5xl lg:text-5xl font-bold text-brand-navy mb-4">
+            Por que escolher Ortobom?
+          </h2>
+          <p className="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto">
+            Colchões desenvolvidos com tecnologia de ponta para garantir conforto e saúde na sua cama
+          </p>
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Benefits Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {benefits.map((benefit) => {
             const Icon = benefit.icon;
             return (
               <div
                 key={benefit.title}
-                className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+                className="group relative bg-white p-8 rounded-xl shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 border border-gray-100"
               >
-                <div className="flex items-start gap-4">
-                  <Icon className="w-8 h-8 text-brand-blue flex-shrink-0 mt-1" />
-                  <div>
-                    <h3 className="font-bold text-brand-navy mb-2">
-                      {benefit.title}
-                    </h3>
-                    <p className="text-gray-600 text-sm">
-                      {benefit.description}
-                    </p>
+                {/* Icon Container with Background */}
+                <div className="mb-6">
+                  <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg group-hover:from-blue-100 group-hover:to-blue-200 transition-colors">
+                    <Icon className="w-8 h-8 text-brand-blue" />
                   </div>
                 </div>
+
+                {/* Content */}
+                <div>
+                  <h3 className="text-lg font-bold text-brand-navy mb-3">
+                    {benefit.title}
+                  </h3>
+                  <p className="text-gray-600 text-base leading-relaxed">
+                    {benefit.description}
+                  </p>
+                </div>
+
+                {/* Hover Accent */}
+                <div className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-brand-blue to-brand-green rounded-b-xl transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
               </div>
             );
           })}
