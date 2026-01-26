@@ -224,32 +224,35 @@ export function TestimonialsMarista() {
 
         {/* Popular Products */}
         <div>
-          <h3 className="text-2xl font-bold text-brand-navy mb-8 text-center">
+          <h3 className="text-3xl md:text-4xl font-bold text-brand-navy mb-4 text-center">
             Produtos Populares
           </h3>
+          <p className="text-gray-700 text-center mb-12 max-w-2xl mx-auto">
+            Conheça os colchões mais procurados pelos nossos clientes
+          </p>
 
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-4">
-            {popularProducts.map((product) => (
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-6">
+            {popularProducts.map((product, index) => (
               <div
                 key={product.name}
-                className="bg-gradient-to-br from-blue-50 to-blue-100 rounded-lg p-4 text-center hover:shadow-md transition-shadow"
+                className="group relative bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden animate-slide-up"
+                style={{ animationDelay: `${index * 50}ms` }}
               >
-                <img
-                  loading="lazy"
-                  alt={product.alt}
-                  src={product.image}
-                  style={{
-                    aspectRatio: "1",
-                    objectFit: "cover",
-                    objectPosition: "center",
-                    width: "100%",
-                    marginTop: "20px",
-                    minHeight: "20px",
-                    minWidth: "20px",
-                    overflow: "hidden",
-                  }}
-                />
-                <p className="font-semibold text-brand-navy text-sm mt-2">
+                {/* Gradient overlay on hover */}
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+
+                {/* Image Container */}
+                <div className="relative mb-4 h-40 flex items-center justify-center bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl overflow-hidden">
+                  <img
+                    loading="lazy"
+                    alt={product.alt}
+                    src={product.image}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                </div>
+
+                {/* Product Name */}
+                <p className="font-bold text-brand-navy text-center text-sm relative z-10 group-hover:text-brand-blue transition-colors">
                   {product.name}
                 </p>
               </div>
