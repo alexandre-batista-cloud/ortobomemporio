@@ -157,40 +157,40 @@ export function TestimonialsMarista() {
         </div>
 
         {/* Key Differentiators */}
-        <div className="bg-gradient-to-br from-brand-blue/10 to-blue-50 rounded-3xl p-10 md:p-16 mb-20 border border-blue-100">
+        <div className="animate-fade-in bg-gradient-to-br from-brand-blue/10 to-blue-50 rounded-3xl p-10 md:p-16 mb-20 border border-blue-100">
           <h3 className="text-3xl md:text-4xl font-bold text-brand-navy mb-12 text-center">
             Diferenciais do Ortobom Empório Marista
           </h3>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
             {/* Entrega Rápida */}
-            <div className="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-red-50 to-red-100 rounded-xl group-hover:scale-110 transition-transform mb-4">
+            <div className="animate-slide-up group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 border border-gray-100 hover:border-blue-200">
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-red-50 to-red-100 rounded-xl group-hover:scale-110 transition-transform duration-300 mb-4">
                 <div className="text-3xl">⚡</div>
               </div>
-              <h4 className="font-bold text-brand-navy mb-3 text-lg">Entrega Rápida</h4>
+              <h4 className="font-bold text-brand-navy mb-3 text-lg group-hover:text-brand-blue transition-colors duration-300">Entrega Rápida</h4>
               <p className="text-gray-600 text-sm leading-relaxed">
                 Entrega ágil em <strong>caminhão baú</strong> com prazos muito mais curtos que o site oficial
               </p>
             </div>
 
             {/* Produtos Fresquinhos */}
-            <div className="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-xl group-hover:scale-110 transition-transform mb-4">
+            <div className="animate-slide-up group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 border border-gray-100 hover:border-blue-200" style={{ animationDelay: "0.1s" }}>
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-yellow-50 to-yellow-100 rounded-xl group-hover:scale-110 transition-transform duration-300 mb-4">
                 <div className="text-3xl">✨</div>
               </div>
-              <h4 className="font-bold text-brand-navy mb-3 text-lg">Produtos Fresquinhos</h4>
+              <h4 className="font-bold text-brand-navy mb-3 text-lg group-hover:text-brand-blue transition-colors duration-300">Produtos Fresquinhos</h4>
               <p className="text-gray-600 text-sm leading-relaxed">
                 Colchões saem da fábrica com duas semanas em média de fabricação
               </p>
             </div>
 
             {/* Consultoria Especializada */}
-            <div className="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl group-hover:scale-110 transition-transform mb-4">
+            <div className="animate-slide-up group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 border border-gray-100 hover:border-blue-200" style={{ animationDelay: "0.2s" }}>
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl group-hover:scale-110 transition-transform duration-300 mb-4">
                 <div className="text-3xl">👨‍💼</div>
               </div>
-              <h4 className="font-bold text-brand-navy mb-3 text-lg">Consultoria Especializada</h4>
+              <h4 className="font-bold text-brand-navy mb-3 text-lg group-hover:text-brand-blue transition-colors duration-300">Consultoria Especializada</h4>
               <p className="text-gray-600 text-sm leading-relaxed">
                 <strong>Consultores com 10+ anos de experiência</strong> para ajudar na escolha perfeita
               </p>
@@ -199,22 +199,22 @@ export function TestimonialsMarista() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Localização Estratégica */}
-            <div className="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-green-50 to-green-100 rounded-xl group-hover:scale-110 transition-transform mb-4">
+            <div className="animate-slide-up group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 border border-gray-100 hover:border-blue-200" style={{ animationDelay: "0.3s" }}>
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-green-50 to-green-100 rounded-xl group-hover:scale-110 transition-transform duration-300 mb-4">
                 <div className="text-3xl">🏪</div>
               </div>
-              <h4 className="font-bold text-brand-navy mb-3 text-lg">Localização Estratégica</h4>
+              <h4 className="font-bold text-brand-navy mb-3 text-lg group-hover:text-brand-blue transition-colors duration-300">Localização Estratégica</h4>
               <p className="text-gray-600 text-sm leading-relaxed">
                 Loja sofisticada no Centro do Marista há <strong>20 anos</strong> com atendimento humanizado, estacionamento coberto. Líder em qualidade em Goiás
               </p>
             </div>
 
             {/* Excelente Custo-Benefício */}
-            <div className="group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-200">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl group-hover:scale-110 transition-transform mb-4">
+            <div className="animate-slide-up group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 border border-gray-100 hover:border-blue-200" style={{ animationDelay: "0.4s" }}>
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl group-hover:scale-110 transition-transform duration-300 mb-4">
                 <div className="text-3xl">💰</div>
               </div>
-              <h4 className="font-bold text-brand-navy mb-3 text-lg">Excelente Custo-Benefício</h4>
+              <h4 className="font-bold text-brand-navy mb-3 text-lg group-hover:text-brand-blue transition-colors duration-300">Excelente Custo-Benefício</h4>
               <p className="text-gray-600 text-sm leading-relaxed">
                 Qualidade superior com preços competitivos em loja física, sem intermediários
               </p>
@@ -224,10 +224,10 @@ export function TestimonialsMarista() {
 
         {/* Popular Products */}
         <div>
-          <h3 className="text-3xl md:text-4xl font-bold text-brand-navy mb-4 text-center">
+          <h3 className="animate-fade-in text-3xl md:text-4xl font-bold text-brand-navy mb-4 text-center">
             Produtos Populares
           </h3>
-          <p className="text-gray-700 text-center mb-12 max-w-2xl mx-auto">
+          <p className="animate-fade-in text-gray-700 text-center mb-12 max-w-2xl mx-auto" style={{ animationDelay: "0.1s" }}>
             Conheça os colchões mais procurados pelos nossos clientes
           </p>
 
