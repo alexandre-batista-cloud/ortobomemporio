@@ -102,14 +102,14 @@ export function HeroMarista() {
 
             {/* CTA Buttons */}
             <div
-              className="animate-slide-up flex flex-col md:flex-row gap-4 pt-6"
+              className="animate-slide-up flex flex-col md:flex-row gap-3 md:gap-4 pt-6"
               style={{ animationDelay: "0.2s" }}
             >
-              <button className="inline-flex items-center justify-center px-8 py-4 bg-brand-navy text-white font-bold rounded-lg hover:bg-blue-900 transition-colors duration-300">
+              <button className="inline-flex items-center justify-center px-6 md:px-8 py-3 md:py-4 bg-brand-navy text-white font-bold text-sm md:text-base rounded-lg hover:bg-blue-900 hover:shadow-lg hover:scale-105 transition-all duration-300 w-full md:w-auto">
                 Escolha Seu Colchão Ideal
               </button>
-              <button className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-brand-green text-white font-bold rounded-lg hover:bg-green-700 transition-colors duration-300">
-                <MessageCircle className="w-5 h-5" />
+              <button className="inline-flex items-center justify-center gap-2 px-6 md:px-8 py-3 md:py-4 bg-brand-green text-white font-bold text-sm md:text-base rounded-lg hover:bg-green-700 hover:shadow-lg hover:scale-105 transition-all duration-300 w-full md:w-auto">
+                <MessageCircle className="w-4 md:w-5 h-4 md:h-5" />
                 Fale com Especialista
               </button>
             </div>
