@@ -98,12 +98,12 @@ export function SleepQuiz() {
               {questions[currentQuestion].question}
             </h3>
 
-            <div className="space-y-3">
+            <div className="space-y-2 md:space-y-3">
               {questions[currentQuestion].options.map((option, idx) => (
                 <button
                   key={option.value}
                   onClick={() => handleAnswer(option.value)}
-                  className="animate-slide-up w-full p-4 text-left bg-white border-2 border-brand-gray-light rounded-lg hover:border-brand-blue hover:bg-blue-50 hover:shadow-md transition-all font-semibold text-brand-navy transform hover:scale-102 active:scale-95"
+                  className="animate-slide-up w-full p-3 md:p-4 text-left bg-white border-2 border-brand-gray-light rounded-lg hover:border-brand-blue hover:bg-blue-50 hover:shadow-md transition-all font-semibold text-sm md:text-base text-brand-navy transform hover:scale-102 active:scale-95"
                   style={{ animationDelay: `${idx * 50}ms` }}
                 >
                   {option.text}
