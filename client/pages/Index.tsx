@@ -204,8 +204,6 @@ export default function Index() {
         />
       </section>
 
-      <Footer />
-
       <WhatsAppButton />
     </div>
   );
