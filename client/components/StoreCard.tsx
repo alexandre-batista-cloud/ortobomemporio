@@ -32,14 +32,14 @@ export function StoreCard() {
     <>
       <section className="py-12 md:py-16 bg-white">
         <div className="max-w-3xl mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-navy text-center mb-12">
+          <h2 className="animate-fade-in text-3xl md:text-4xl font-bold text-brand-navy text-center mb-12">
             Ortobom Empório Marista – Goiânia
           </h2>
 
           {/* Store Card */}
-          <div className="bg-brand-beige rounded-lg p-8 md:p-12 shadow-lg">
+          <div className="animate-scale-in bg-brand-beige rounded-lg p-8 md:p-12 shadow-lg border border-yellow-100 hover:shadow-xl transition-shadow duration-300">
             {/* Address */}
-            <div className="flex gap-4 mb-6">
+            <div className="animate-slide-up flex gap-4 mb-6" style={{ animationDelay: "0.1s" }}>
               <MapPin className="w-6 h-6 text-brand-blue flex-shrink-0 mt-1" />
               <div>
                 <div className="font-semibold text-brand-navy text-lg">
@@ -53,7 +53,7 @@ export function StoreCard() {
             </div>
 
             {/* Hours */}
-            <div className="flex gap-4 mb-8">
+            <div className="animate-slide-up flex gap-4 mb-8" style={{ animationDelay: "0.15s" }}>
               <Clock className="w-6 h-6 text-brand-blue flex-shrink-0 mt-1" />
               <div>
                 <p className="font-semibold text-brand-navy text-lg">Horários</p>
@@ -64,25 +64,25 @@ export function StoreCard() {
             </div>
 
             {/* Store Gallery */}
-            <div className="border-t pt-8 mt-8">
+            <div className="animate-fade-in border-t pt-8 mt-8" style={{ animationDelay: "0.2s" }}>
               <h3 className="text-xl font-semibold text-brand-navy mb-4">Conheça nossa loja</h3>
               <StoreGallery />
             </div>
 
             {/* Buttons */}
-            <div className="flex flex-col md:flex-row gap-4 mt-8">
+            <div className="animate-slide-up flex flex-col md:flex-row gap-4 mt-8" style={{ animationDelay: "0.25s" }}>
               <a
                 href="https://maps.app.goo.gl/ET9kAgcG1nRUhWj26"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 flex items-center justify-center gap-2 px-6 py-4 bg-white border-2 border-brand-blue text-brand-blue font-bold rounded-lg hover:bg-blue-50 transition-colors"
+                className="flex-1 flex items-center justify-center gap-2 px-6 py-4 bg-white border-2 border-brand-blue text-brand-blue font-bold rounded-lg hover:bg-blue-50 hover:shadow-md hover:scale-105 transition-all duration-300"
               >
                 <MapPin className="w-5 h-5" />
                 Abrir no Google Maps
               </a>
               <button
                 onClick={() => setShowBookingForm(true)}
-                className="flex-1 flex items-center justify-center gap-2 px-6 py-4 bg-brand-blue text-white font-bold rounded-lg hover:bg-blue-700 transition-colors"
+                className="flex-1 flex items-center justify-center gap-2 px-6 py-4 bg-brand-blue text-white font-bold rounded-lg hover:bg-blue-700 hover:shadow-lg hover:scale-105 transition-all duration-300"
               >
                 <Calendar className="w-5 h-5" />
                 Agendar visita
@@ -94,8 +94,8 @@ export function StoreCard() {
 
       {/* Booking Modal */}
       {showBookingForm && (
-        <div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center p-4 md:p-6">
-          <div className="bg-white rounded-lg max-w-md w-full p-6 md:p-8 relative">
+        <div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center p-4 md:p-6 animate-fade-in">
+          <div className="bg-white rounded-lg max-w-md w-full p-6 md:p-8 relative animate-scale-in">
             {/* Close Button */}
             <button
               onClick={() => setShowBookingForm(false)}
