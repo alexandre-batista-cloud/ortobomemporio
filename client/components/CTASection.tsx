@@ -31,19 +31,19 @@ export function CTASection() {
 
           {/* Benefits List */}
           <div className="grid grid-cols-2 gap-4 mb-10 text-left max-w-md mx-auto">
-            <div className="flex items-center gap-2 text-sm">
+            <div className="animate-slide-up flex items-center gap-2 text-sm" style={{ animationDelay: "0.1s" }}>
               <ChevronRight className="w-4 h-4 text-brand-green flex-shrink-0" />
               <span className="text-gray-700">Atendimento rápido</span>
             </div>
-            <div className="flex items-center gap-2 text-sm">
+            <div className="animate-slide-up flex items-center gap-2 text-sm" style={{ animationDelay: "0.15s" }}>
               <ChevronRight className="w-4 h-4 text-brand-green flex-shrink-0" />
               <span className="text-gray-700">100% gratuito</span>
             </div>
-            <div className="flex items-center gap-2 text-sm">
+            <div className="animate-slide-up flex items-center gap-2 text-sm" style={{ animationDelay: "0.2s" }}>
               <ChevronRight className="w-4 h-4 text-brand-green flex-shrink-0" />
               <span className="text-gray-700">Consultores experientes</span>
             </div>
-            <div className="flex items-center gap-2 text-sm">
+            <div className="animate-slide-up flex items-center gap-2 text-sm" style={{ animationDelay: "0.25s" }}>
               <ChevronRight className="w-4 h-4 text-brand-green flex-shrink-0" />
               <span className="text-gray-700">Sem compromisso</span>
             </div>
@@ -54,13 +54,14 @@ export function CTASection() {
             href="https://wa.me/552125300765"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-2 px-10 py-4 rounded-xl bg-gradient-to-r from-brand-green to-green-600 text-white font-bold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 w-full md:w-auto"
+            className="animate-slide-up inline-flex items-center justify-center gap-2 px-10 py-4 rounded-xl bg-gradient-to-r from-brand-green to-green-600 text-white font-bold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300 w-full md:w-auto"
+            style={{ animationDelay: "0.3s" }}
           >
-            <MessageCircle className="w-6 h-6" />
+            <MessageCircle className="w-6 h-6 group-hover:scale-110 transition-transform duration-300" />
             Solicitar Orçamento pelo WhatsApp
           </a>
 
-          <p className="text-xs text-gray-600 mt-6">
+          <p className="animate-fade-in text-xs text-gray-600 mt-6" style={{ animationDelay: "0.35s" }}>
             💬 Responderemos em até 2 horas durante o horário comercial
           </p>
         </div>
