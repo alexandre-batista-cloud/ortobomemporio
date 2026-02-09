@@ -162,7 +162,7 @@ export function TestimonialsMarista() {
             Diferenciais do Ortobom Empório Marista
           </h3>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mb-8">
             {/* Entrega Rápida */}
             <div className="animate-slide-up group bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl hover:scale-105 transition-all duration-300 border border-gray-100 hover:border-blue-200">
               <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-red-50 to-red-100 rounded-xl group-hover:scale-110 transition-transform duration-300 mb-4">
