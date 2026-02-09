@@ -1,0 +1,15 @@
+{
+    "name": "Ortobom Goiânia - Colchões no Marista",
+    "short_name": "Ortobom GO",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#1a365d",
+    "icons": [
+        {
+            "src": "/favicon.ico",
+            "sizes": "64x64",
+            "type": "image/x-icon"
+        }
+    ]
+}

@@ -1,5 +1,6 @@
 import { defineConfig, Plugin } from "vite";
 import react from "@vitejs/plugin-react-swc";
+import prerender from 'vite-plugin-prerender';
 import path from "path";
 import { createServer } from "./server";
 
@@ -16,7 +17,26 @@ export default defineConfig(({ mode }) => ({
   build: {
     outDir: "dist/spa",
   },
-  plugins: [react(), expressPlugin()],
+  plugins: [
+    react(),
+    prerender({
+      staticDir: path.join(__dirname, 'dist/spa'),
+      routes: ['/'],
+      renderer: '@prerenderer/renderer-puppeteer',
+      server: {
+        port: 8080,
+        host: 'localhost',
+        prefix: '/'
+      },
+      postProcess(renderedRoute) {
+        renderedRoute.html = renderedRoute.html
+          .replace(/http:/i, 'https:')
+          .replace(/(https:\/\/)?(localhost|127\.0\.0\.1):\d*/i, 'https://ortobomgoiania.com.br');
+        return renderedRoute;
+      }
+    }),
+    expressPlugin()
+  ],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./client"),
