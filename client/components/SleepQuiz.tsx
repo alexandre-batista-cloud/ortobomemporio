@@ -85,7 +85,7 @@ export function SleepQuiz() {
     <section className="py-12 md:py-16 bg-white">
       <div className="flex flex-col relative mt-5 h-auto pb-30"></div>
       <div className="max-w-2xl mx-auto px-4">
-        <h2 className="animate-fade-in text-3xl md:text-4xl font-bold text-brand-navy text-center mb-2">
+        <h2 className="animate-fade-in text-2xl md:text-3xl lg:text-4xl font-bold text-brand-navy text-center mb-2">
           Descubra Seu Colchão Ideal
         </h2>
         <p className="animate-fade-in text-center text-gray-600 mb-8" style={{ animationDelay: "0.1s" }}>
