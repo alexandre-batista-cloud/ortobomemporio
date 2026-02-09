@@ -25,7 +25,7 @@ export function HowItWorks() {
   return (
     <section className="py-12 md:py-16 bg-brand-beige">
       <div className="max-w-5xl mx-auto px-4">
-        <h2 className="animate-fade-in text-3xl md:text-4xl font-bold text-brand-navy text-center mb-4">
+        <h2 className="animate-fade-in text-2xl md:text-3xl lg:text-4xl font-bold text-brand-navy text-center mb-4">
           Como Funciona
         </h2>
         <p className="animate-fade-in text-center text-gray-600 mb-12 max-w-2xl mx-auto" style={{ animationDelay: "0.1s" }}>
