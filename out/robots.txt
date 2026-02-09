@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+Sitemap: https://ortobomgoiania.com.br/sitemap.xml
