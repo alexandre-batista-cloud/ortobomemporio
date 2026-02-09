@@ -1,3 +1,4 @@
+import SEOHead from "@/components/SEOHead";
 import { HeaderMarista } from "@/components/HeaderMarista";
 import { HeroMarista } from "@/components/HeroMarista";
 import { CampaignCTA } from "@/components/CampaignCTA";
@@ -13,6 +14,7 @@ import { FooterMarista } from "@/components/FooterMarista";
 export default function MaristaLanding() {
   return (
     <div className="min-h-screen bg-white flex flex-col">
+      <SEOHead page="home" />
       <HeaderMarista />
 
       <HeroMarista />
