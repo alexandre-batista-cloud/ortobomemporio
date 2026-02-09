@@ -21,7 +21,8 @@ export function HeroMarista() {
           backgroundRepeat: "no-repeat",
           backgroundAttachment: "scroll",
           backgroundSize: "cover",
-          padding: "96px 0 80px",
+          padding: "60px 0 50px",
+          paddingTop: "var(--hero-padding-top, 96px)",
         }}
       >
         {/* Gradient Overlay */}
