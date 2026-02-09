@@ -71,8 +71,8 @@ export function TestimonialsMarista() {
     <section className="py-20 md:py-28 bg-gradient-to-b from-white to-blue-50">
       <div className="max-w-6xl mx-auto px-4 md:px-6">
         {/* Header with Google Rating */}
-        <div className="text-center mb-20">
-          <h2 className="animate-fade-in text-4xl md:text-5xl font-bold text-brand-navy mb-4">
+        <div className="text-center mb-12 md:mb-20">
+          <h2 className="animate-fade-in text-2xl md:text-3xl lg:text-4xl font-bold text-brand-navy mb-4">
             O que Nossos Clientes Dizem
           </h2>
           <p className="text-gray-700 text-lg md:text-xl mb-10">
