@@ -13,7 +13,7 @@ export function HeroMarista() {
       </div>
 
       <section
-        className="relative w-full bg-white overflow-hidden"
+        className="relative w-full bg-white overflow-hidden py-12 md:py-24"
         style={{
           backgroundImage:
             "url('https://cdn.builder.io/api/v1/image/assets%2Fc3f87aa31bff43888730edcf4efdccde%2F7b02c97ed6f14e8f839c40fbfb76f290?format=webp&width=800')",
@@ -21,8 +21,6 @@ export function HeroMarista() {
           backgroundRepeat: "no-repeat",
           backgroundAttachment: "scroll",
           backgroundSize: "cover",
-          padding: "60px 0 50px",
-          paddingTop: "var(--hero-padding-top, 96px)",
         }}
       >
         {/* Gradient Overlay */}
