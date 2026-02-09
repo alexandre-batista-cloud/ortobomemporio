@@ -20,11 +20,11 @@ export function CTASection() {
           {/* Decorative accent */}
           <div className="absolute -top-1 left-1/2 transform -translate-x-1/2 w-20 h-1 bg-gradient-to-r from-brand-blue to-brand-green rounded-full" />
 
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-4">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-navy mb-4">
             Faça seu Orçamento Agora
           </h2>
 
-          <p className="text-gray-700 text-base md:text-lg mb-8 leading-relaxed">
+          <p className="text-gray-700 text-sm md:text-base lg:text-lg mb-8 leading-relaxed">
             Entre em contato com nossos especialistas pelo WhatsApp e receba um{" "}
             <span className="font-bold text-brand-blue">orçamento totalmente gratuito</span> em poucos minutos.
           </p>
