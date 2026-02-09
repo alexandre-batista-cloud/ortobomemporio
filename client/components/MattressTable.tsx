@@ -22,7 +22,7 @@ export function MattressTable() {
   return (
     <section className="py-12 md:py-16 bg-white">
       <div className="max-w-4xl mx-auto px-4">
-        <h2 className="animate-fade-in text-3xl md:text-4xl font-bold text-brand-navy text-center mb-12">
+        <h2 className="animate-fade-in text-2xl md:text-3xl lg:text-4xl font-bold text-brand-navy text-center mb-12">
           Escolha Rápida
         </h2>
 
