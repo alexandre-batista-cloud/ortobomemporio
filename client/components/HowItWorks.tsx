@@ -28,7 +28,10 @@ export function HowItWorks() {
         <h2 className="animate-fade-in text-2xl md:text-3xl lg:text-4xl font-bold text-brand-navy text-center mb-4">
           Como Funciona
         </h2>
-        <p className="animate-fade-in text-center text-gray-600 mb-12 max-w-2xl mx-auto" style={{ animationDelay: "0.1s" }}>
+        <p
+          className="animate-fade-in text-center text-gray-600 mb-12 max-w-2xl mx-auto"
+          style={{ animationDelay: "0.1s" }}
+        >
           Sem compromisso. Sem pressão. Só conforto certo.
         </p>
 
@@ -37,7 +40,11 @@ export function HowItWorks() {
           {steps.map((step) => {
             const Icon = step.icon;
             return (
-              <div key={step.number} className="relative animate-slide-up" style={{ animationDelay: `${step.number * 100}ms` }}>
+              <div
+                key={step.number}
+                className="relative animate-slide-up"
+                style={{ animationDelay: `${step.number * 100}ms` }}
+              >
                 {/* Card */}
                 <div className="bg-white rounded-lg p-6 md:p-8 h-full shadow-sm hover:shadow-lg hover:scale-105 transition-all duration-300 border border-gray-100 hover:border-brand-blue">
                   {/* Step Number Circle */}
@@ -69,7 +76,10 @@ export function HowItWorks() {
         </div>
 
         {/* Final CTA */}
-        <div className="animate-fade-in text-center" style={{ animationDelay: "0.3s" }}>
+        <div
+          className="animate-fade-in text-center"
+          style={{ animationDelay: "0.3s" }}
+        >
           <p className="text-brand-navy font-semibold mb-4 text-lg">
             Pronto para começar?
           </p>

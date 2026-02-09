@@ -9,7 +9,10 @@ export function CampaignCTA() {
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-navy mb-3">
             Pronto para Transformar seu Sono?
           </h2>
-          <p className="animate-slide-up text-gray-700 text-lg" style={{ animationDelay: "0.1s" }}>
+          <p
+            className="animate-slide-up text-gray-700 text-lg"
+            style={{ animationDelay: "0.1s" }}
+          >
             Escolha como prefere falar com nossos especialistas
           </p>
         </div>
@@ -17,7 +20,11 @@ export function CampaignCTA() {
         {/* CTA Buttons */}
         <div className="flex flex-col md:flex-row gap-3 md:gap-6 justify-center items-center">
           <button
-            onClick={() => document.getElementById("booking-form")?.scrollIntoView({ behavior: "smooth" })}
+            onClick={() =>
+              document
+                .getElementById("booking-form")
+                ?.scrollIntoView({ behavior: "smooth" })
+            }
             className="animate-slide-up group flex items-center justify-center gap-2 md:gap-3 px-4 md:px-10 py-3 md:py-5 bg-gradient-to-r from-brand-blue to-blue-700 text-white font-bold text-sm md:text-lg rounded-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 w-full md:w-auto min-h-[48px] md:min-h-[60px]"
             style={{ animationDelay: "0.15s" }}
           >
@@ -44,9 +51,13 @@ export function CampaignCTA() {
         </div>
 
         {/* Trust Message */}
-        <div className="animate-fade-in mt-10 text-center" style={{ animationDelay: "0.25s" }}>
+        <div
+          className="animate-fade-in mt-10 text-center"
+          style={{ animationDelay: "0.25s" }}
+        >
           <p className="text-gray-600 text-sm">
-            ✨ Consultores especializados | 💬 Resposta rápida | 🎯 Recomendação personalizada
+            ✨ Consultores especializados | 💬 Resposta rápida | 🎯 Recomendação
+            personalizada
           </p>
         </div>
       </div>

@@ -83,7 +83,10 @@ export function FAQAccordion() {
         </div>
 
         {/* Final CTA */}
-        <div className="animate-fade-in text-center bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300" style={{ animationDelay: "0.3s" }}>
+        <div
+          className="animate-fade-in text-center bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300"
+          style={{ animationDelay: "0.3s" }}
+        >
           <p className="font-semibold text-brand-navy mb-4">
             Ainda tem dúvidas?
           </p>

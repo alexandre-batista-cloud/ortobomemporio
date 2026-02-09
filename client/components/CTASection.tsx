@@ -26,24 +26,39 @@ export function CTASection() {
 
           <p className="text-gray-700 text-sm md:text-base lg:text-lg mb-8 leading-relaxed">
             Entre em contato com nossos especialistas pelo WhatsApp e receba um{" "}
-            <span className="font-bold text-brand-blue">orçamento totalmente gratuito</span> em poucos minutos.
+            <span className="font-bold text-brand-blue">
+              orçamento totalmente gratuito
+            </span>{" "}
+            em poucos minutos.
           </p>
 
           {/* Benefits List */}
           <div className="grid grid-cols-2 gap-4 mb-10 text-left max-w-md mx-auto">
-            <div className="animate-slide-up flex items-center gap-2 text-sm" style={{ animationDelay: "0.1s" }}>
+            <div
+              className="animate-slide-up flex items-center gap-2 text-sm"
+              style={{ animationDelay: "0.1s" }}
+            >
               <ChevronRight className="w-4 h-4 text-brand-green flex-shrink-0" />
               <span className="text-gray-700">Atendimento rápido</span>
             </div>
-            <div className="animate-slide-up flex items-center gap-2 text-sm" style={{ animationDelay: "0.15s" }}>
+            <div
+              className="animate-slide-up flex items-center gap-2 text-sm"
+              style={{ animationDelay: "0.15s" }}
+            >
               <ChevronRight className="w-4 h-4 text-brand-green flex-shrink-0" />
               <span className="text-gray-700">100% gratuito</span>
             </div>
-            <div className="animate-slide-up flex items-center gap-2 text-sm" style={{ animationDelay: "0.2s" }}>
+            <div
+              className="animate-slide-up flex items-center gap-2 text-sm"
+              style={{ animationDelay: "0.2s" }}
+            >
               <ChevronRight className="w-4 h-4 text-brand-green flex-shrink-0" />
               <span className="text-gray-700">Consultores experientes</span>
             </div>
-            <div className="animate-slide-up flex items-center gap-2 text-sm" style={{ animationDelay: "0.25s" }}>
+            <div
+              className="animate-slide-up flex items-center gap-2 text-sm"
+              style={{ animationDelay: "0.25s" }}
+            >
               <ChevronRight className="w-4 h-4 text-brand-green flex-shrink-0" />
               <span className="text-gray-700">Sem compromisso</span>
             </div>
@@ -61,7 +76,10 @@ export function CTASection() {
             Solicitar Orçamento pelo WhatsApp
           </a>
 
-          <p className="animate-fade-in text-xs text-gray-600 mt-6" style={{ animationDelay: "0.35s" }}>
+          <p
+            className="animate-fade-in text-xs text-gray-600 mt-6"
+            style={{ animationDelay: "0.35s" }}
+          >
             💬 Responderemos em até 2 horas durante o horário comercial
           </p>
         </div>

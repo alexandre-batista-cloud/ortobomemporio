@@ -12,11 +12,14 @@ export function StoreCard() {
     immediateContact: false,
   });
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
+  const handleInputChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>,
+  ) => {
     const { name, value, type } = e.target;
     setFormData((prev) => ({
       ...prev,
-      [name]: type === "checkbox" ? (e.target as HTMLInputElement).checked : value,
+      [name]:
+        type === "checkbox" ? (e.target as HTMLInputElement).checked : value,
     }));
   };
 
@@ -39,24 +42,33 @@ export function StoreCard() {
           {/* Store Card */}
           <div className="animate-scale-in bg-brand-beige rounded-lg p-8 md:p-12 shadow-lg border border-yellow-100 hover:shadow-xl transition-shadow duration-300">
             {/* Address */}
-            <div className="animate-slide-up flex gap-4 mb-6" style={{ animationDelay: "0.1s" }}>
+            <div
+              className="animate-slide-up flex gap-4 mb-6"
+              style={{ animationDelay: "0.1s" }}
+            >
               <MapPin className="w-6 h-6 text-brand-blue flex-shrink-0 mt-1" />
               <div>
                 <div className="font-semibold text-brand-navy text-lg">
-                  <p>Em Frente ao Empório Prime, ao lado do Cartório Silva em Goiânia.</p>
+                  <p>
+                    Em Frente ao Empório Prime, ao lado do Cartório Silva em
+                    Goiânia.
+                  </p>
                 </div>
-                <p className="text-gray-700">
-                  Avenida 85, 2385 - St. Marista
-                </p>
+                <p className="text-gray-700">Avenida 85, 2385 - St. Marista</p>
                 <p className="text-gray-700">Goiânia - GO, 74160-010</p>
               </div>
             </div>
 
             {/* Hours */}
-            <div className="animate-slide-up flex gap-4 mb-8" style={{ animationDelay: "0.15s" }}>
+            <div
+              className="animate-slide-up flex gap-4 mb-8"
+              style={{ animationDelay: "0.15s" }}
+            >
               <Clock className="w-6 h-6 text-brand-blue flex-shrink-0 mt-1" />
               <div>
-                <p className="font-semibold text-brand-navy text-lg">Horários</p>
+                <p className="font-semibold text-brand-navy text-lg">
+                  Horários
+                </p>
                 <p className="text-gray-700">Segunda a Sexta: 09h às 19h</p>
                 <p className="text-gray-700">Sábado: 09h às 13h</p>
                 <p className="text-gray-700">Domingo: Fechado</p>
@@ -64,13 +76,21 @@ export function StoreCard() {
             </div>
 
             {/* Store Gallery */}
-            <div className="animate-fade-in border-t pt-8 mt-8" style={{ animationDelay: "0.2s" }}>
-              <h3 className="text-xl font-semibold text-brand-navy mb-4">Conheça nossa loja</h3>
+            <div
+              className="animate-fade-in border-t pt-8 mt-8"
+              style={{ animationDelay: "0.2s" }}
+            >
+              <h3 className="text-xl font-semibold text-brand-navy mb-4">
+                Conheça nossa loja
+              </h3>
               <StoreGallery />
             </div>
 
             {/* Buttons */}
-            <div className="animate-slide-up flex flex-col md:flex-row gap-3 md:gap-4 mt-8" style={{ animationDelay: "0.25s" }}>
+            <div
+              className="animate-slide-up flex flex-col md:flex-row gap-3 md:gap-4 mt-8"
+              style={{ animationDelay: "0.25s" }}
+            >
               <a
                 href="https://maps.app.goo.gl/ET9kAgcG1nRUhWj26"
                 target="_blank"

@@ -42,8 +42,12 @@ export function BenefitsGrid() {
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-navy mb-4">
             Por que escolher Ortobom?
           </h2>
-          <p className="animate-slide-up text-lg md:text-xl text-gray-700 max-w-2xl mx-auto" style={{ animationDelay: "0.1s" }}>
-            Colchões desenvolvidos com tecnologia de ponta para garantir conforto e saúde na sua cama
+          <p
+            className="animate-slide-up text-lg md:text-xl text-gray-700 max-w-2xl mx-auto"
+            style={{ animationDelay: "0.1s" }}
+          >
+            Colchões desenvolvidos com tecnologia de ponta para garantir
+            conforto e saúde na sua cama
           </p>
         </div>
 

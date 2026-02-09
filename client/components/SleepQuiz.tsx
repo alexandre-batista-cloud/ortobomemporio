@@ -42,14 +42,45 @@ const questions = [
   },
 ];
 
-const recommendations: Record<string, { title: string; benefit: string; model: string }> = {
-  side: { title: "Alívio de Pressão", benefit: "Perfeito para dormir de lado", model: "Colchão Ouro Spring" },
-  stomach: { title: "Suporte Firme", benefit: "Estabilidade para a coluna", model: "Colchão Pro Saúde" },
-  back: { title: "Equilíbrio Perfeito", benefit: "Alinhamento correto da coluna", model: "Colchão Only" },
-  mixed: { title: "Versatilidade", benefit: "Funciona em todas as posições", model: "Colchão Liberty" },
-  spine: { title: "Suporte Especializado", benefit: "Reduz dor na coluna", model: "Colchão Pro Saúde Visco" },
-  soft: { title: "Máximo Conforto", benefit: "Sensação acolhedora", model: "Colchão Ouro Spring" },
-  firm: { title: "Máxima Estabilidade", benefit: "Suporte correto", model: "Colchão Pro Saúde" },
+const recommendations: Record<
+  string,
+  { title: string; benefit: string; model: string }
+> = {
+  side: {
+    title: "Alívio de Pressão",
+    benefit: "Perfeito para dormir de lado",
+    model: "Colchão Ouro Spring",
+  },
+  stomach: {
+    title: "Suporte Firme",
+    benefit: "Estabilidade para a coluna",
+    model: "Colchão Pro Saúde",
+  },
+  back: {
+    title: "Equilíbrio Perfeito",
+    benefit: "Alinhamento correto da coluna",
+    model: "Colchão Only",
+  },
+  mixed: {
+    title: "Versatilidade",
+    benefit: "Funciona em todas as posições",
+    model: "Colchão Liberty",
+  },
+  spine: {
+    title: "Suporte Especializado",
+    benefit: "Reduz dor na coluna",
+    model: "Colchão Pro Saúde Visco",
+  },
+  soft: {
+    title: "Máximo Conforto",
+    benefit: "Sensação acolhedora",
+    model: "Colchão Ouro Spring",
+  },
+  firm: {
+    title: "Máxima Estabilidade",
+    benefit: "Suporte correto",
+    model: "Colchão Pro Saúde",
+  },
 };
 
 export function SleepQuiz() {
@@ -75,7 +106,11 @@ export function SleepQuiz() {
   };
 
   const getRecommendation = () => {
-    const mainAnswer = answers["sleep-position"] || answers["pain"] || answers["firmness"] || "side";
+    const mainAnswer =
+      answers["sleep-position"] ||
+      answers["pain"] ||
+      answers["firmness"] ||
+      "side";
     return recommendations[mainAnswer] || recommendations["side"];
   };
 
@@ -88,7 +123,10 @@ export function SleepQuiz() {
         <h2 className="animate-fade-in text-2xl md:text-3xl lg:text-4xl font-bold text-brand-navy text-center mb-2">
           Descubra Seu Colchão Ideal
         </h2>
-        <p className="animate-fade-in text-center text-gray-600 mb-8" style={{ animationDelay: "0.1s" }}>
+        <p
+          className="animate-fade-in text-center text-gray-600 mb-8"
+          style={{ animationDelay: "0.1s" }}
+        >
           Apenas {currentQuestion + 1} de {questions.length} perguntas
         </p>
 
@@ -115,16 +153,33 @@ export function SleepQuiz() {
             <div className="mt-6 bg-gray-200 rounded-full h-2 overflow-hidden">
               <div
                 className="bg-gradient-to-r from-brand-blue to-blue-700 h-2 rounded-full transition-all duration-500 ease-out"
-                style={{ width: `${((currentQuestion + 1) / questions.length) * 100}%` }}
+                style={{
+                  width: `${((currentQuestion + 1) / questions.length) * 100}%`,
+                }}
               />
             </div>
           </div>
         ) : (
           <div className="animate-scale-in bg-gradient-to-r from-brand-blue to-brand-navy rounded-lg p-6 md:p-8 text-white text-center shadow-lg">
-            <h3 className="text-2xl font-bold mb-4 animate-slide-up">✓ Seu Colchão Ideal:</h3>
-            <p className="text-lg font-semibold mb-2 animate-slide-up" style={{ animationDelay: "0.1s" }}>{recommendation.title}</p>
-            <p className="text-blue-100 mb-6 animate-slide-up" style={{ animationDelay: "0.15s" }}>{recommendation.benefit}</p>
-            <p className="bg-white/20 rounded p-3 mb-6 font-bold animate-slide-up" style={{ animationDelay: "0.2s" }}>
+            <h3 className="text-2xl font-bold mb-4 animate-slide-up">
+              ✓ Seu Colchão Ideal:
+            </h3>
+            <p
+              className="text-lg font-semibold mb-2 animate-slide-up"
+              style={{ animationDelay: "0.1s" }}
+            >
+              {recommendation.title}
+            </p>
+            <p
+              className="text-blue-100 mb-6 animate-slide-up"
+              style={{ animationDelay: "0.15s" }}
+            >
+              {recommendation.benefit}
+            </p>
+            <p
+              className="bg-white/20 rounded p-3 mb-6 font-bold animate-slide-up"
+              style={{ animationDelay: "0.2s" }}
+            >
               Modelo indicado: {recommendation.model}
             </p>
 

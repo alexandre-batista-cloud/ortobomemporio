@@ -27,14 +27,23 @@ export function MattressTable() {
         </h2>
 
         {/* Table */}
-        <div className="animate-slide-up overflow-x-auto mb-8 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-300" style={{ animationDelay: "0.1s" }}>
+        <div
+          className="animate-slide-up overflow-x-auto mb-8 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-300"
+          style={{ animationDelay: "0.1s" }}
+        >
           <table className="w-full border-collapse text-sm md:text-base">
             <thead>
               <tr className="bg-gradient-to-r from-brand-blue to-blue-700 text-white">
                 <th className="p-2 md:p-4 text-left font-bold">Sensação</th>
-                <th className="p-2 md:p-4 text-left font-bold hidden md:table-cell">Ideal para</th>
-                <th className="p-2 md:p-4 text-left font-bold hidden md:table-cell">Benefício</th>
-                <th className="p-2 md:p-4 text-left font-bold md:hidden">Detalhes</th>
+                <th className="p-2 md:p-4 text-left font-bold hidden md:table-cell">
+                  Ideal para
+                </th>
+                <th className="p-2 md:p-4 text-left font-bold hidden md:table-cell">
+                  Benefício
+                </th>
+                <th className="p-2 md:p-4 text-left font-bold md:hidden">
+                  Detalhes
+                </th>
               </tr>
             </thead>
             <tbody>
@@ -62,7 +71,10 @@ export function MattressTable() {
         </div>
 
         {/* CTA */}
-        <div className="animate-fade-in text-center" style={{ animationDelay: "0.2s" }}>
+        <div
+          className="animate-fade-in text-center"
+          style={{ animationDelay: "0.2s" }}
+        >
           <a
             href="https://wa.me/5562996148873?text=Quero%20ajuda%20para%20escolher%20a%20firmeza%20certa%20para%20mim!"
             target="_blank"

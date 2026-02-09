@@ -1,4 +1,11 @@
-import { MessageCircle, Calendar, Star, Zap, CheckCircle, Truck } from "lucide-react";
+import {
+  MessageCircle,
+  Calendar,
+  Star,
+  Zap,
+  CheckCircle,
+  Truck,
+} from "lucide-react";
 
 export function HeroMarista() {
   return (
@@ -7,7 +14,8 @@ export function HeroMarista() {
       <div className="w-full bg-gradient-to-r from-red-500 to-red-600 text-white py-3 px-4">
         <div className="max-w-6xl mx-auto text-center">
           <p className="text-sm md:text-base font-semibold">
-            🎁 PROMOÇÃO LIMITADA: Kit de travesseiros grátis nas compras acima de R$1.499
+            🎁 PROMOÇÃO LIMITADA: Kit de travesseiros grátis nas compras acima
+            de R$1.499
           </p>
         </div>
       </div>
@@ -65,7 +73,9 @@ export function HeroMarista() {
               className="animate-slide-up text-lg md:text-xl text-gray-700 max-w-2xl"
               style={{ animationDelay: "0.1s", marginTop: "-3px" }}
             >
-              Transforme suas noites com os colchões premium do Ortobom Empório Marista. Entrega rápida, consultoria especializada e satisfação garantida.
+              Transforme suas noites com os colchões premium do Ortobom Empório
+              Marista. Entrega rápida, consultoria especializada e satisfação
+              garantida.
             </p>
 
             {/* Benefits Above Fold */}
@@ -116,7 +126,11 @@ export function HeroMarista() {
             {/* Social Proof Metrics */}
             <div
               className="animate-slide-up flex flex-wrap gap-6 py-4 border-t border-gray-200"
-              style={{ animationDelay: "0.25s", marginTop: "8px", paddingTop: "24px" }}
+              style={{
+                animationDelay: "0.25s",
+                marginTop: "8px",
+                paddingTop: "24px",
+              }}
             >
               <div className="flex items-center gap-2">
                 <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" />
