@@ -60,8 +60,8 @@ export default function SEOHead({ page = "home" }: SEOHeadProps) {
       worstRating: "1",
     },
     sameAs: [
-      "https://www.instagram.com/ortobomgoiania",
-      "https://www.facebook.com/ortobomgoiania",
+      "https://www.instagram.com/ortobom.emporio.marista",
+      "https://web.facebook.com/profile.php?id=61576184542738&sk=directory_personal_details",
     ],
   };
 

@@ -5,6 +5,8 @@ import { Testimonials } from "@/components/Testimonials";
 import { CTASection } from "@/components/CTASection";
 import { ContactInfo } from "@/components/ContactInfo";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import SEOHead from "@/components/SEOHead";
+import AIOptimizedContent from "@/components/AIOptimizedContent";
 
 const colchoesProducts = [
   {
@@ -150,60 +152,64 @@ const roupasDeCamaProducts = [
 
 export default function Index() {
   return (
-    <div className="min-h-screen bg-white">
-      <HeroCarousel />
+    <>
+      <SEOHead page="home" />
+      <AIOptimizedContent />
+      <div className="min-h-screen bg-white">
+        <HeroCarousel />
 
-      <CategoryHighlights />
+        <CategoryHighlights />
 
-      {/* Colchões Section */}
-      <section id="colchoes" className="py-12 md:py-16">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-semibold text-brand-navy text-center mb-8">
-            Colchões
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {colchoesProducts.map((product, index) => (
-              <ProductCard key={index} {...product} />
-            ))}
+        {/* Colchões Section */}
+        <section id="colchoes" className="py-12 md:py-16">
+          <div className="max-w-7xl mx-auto px-4">
+            <h2 className="text-2xl md:text-3xl font-semibold text-brand-navy text-center mb-8">
+              Colchões
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {colchoesProducts.map((product, index) => (
+                <ProductCard key={index} {...product} />
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <Testimonials />
+        <Testimonials />
 
-      <CTASection />
+        <CTASection />
 
-      {/* Roupas de Cama Section */}
-      <section id="roupas" className="py-12 md:py-16">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-2xl md:text-3xl font-semibold text-brand-navy text-center mb-8">
-            Roupas de Cama
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {roupasDeCamaProducts.map((product, index) => (
-              <ProductCard key={index} {...product} />
-            ))}
+        {/* Roupas de Cama Section */}
+        <section id="roupas" className="py-12 md:py-16">
+          <div className="max-w-7xl mx-auto px-4">
+            <h2 className="text-2xl md:text-3xl font-semibold text-brand-navy text-center mb-8">
+              Roupas de Cama
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {roupasDeCamaProducts.map((product, index) => (
+                <ProductCard key={index} {...product} />
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <ContactInfo />
+        <ContactInfo />
 
-      {/* Map Section */}
-      <section className="relative h-[300px] bg-[#E5E3DF]">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.6647424!2d-43.2245!3d-22.9668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDU4JzAwLjUiUyA0M8KwMTMnMjguMiJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
-          width="100%"
-          height="300"
-          style={{ border: "2px solid #1A73E8" }}
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          title="Localização Ortobom"
-        />
-      </section>
+        {/* Map Section */}
+        <section className="relative h-[300px] bg-[#E5E3DF]">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.6647424!2d-43.2245!3d-22.9668!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDU4JzAwLjUiUyA0M8KwMTMnMjguMiJX!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+            width="100%"
+            height="300"
+            style={{ border: "2px solid #1A73E8" }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Localização Ortobom"
+          />
+        </section>
 
-      <WhatsAppButton />
-    </div>
+        <WhatsAppButton />
+      </div>
+    </>
   );
 }
