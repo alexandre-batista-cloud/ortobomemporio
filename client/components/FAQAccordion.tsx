@@ -46,26 +46,27 @@ export function FAQAccordion() {
   return (
     <section className="py-12 md:py-16 bg-brand-beige">
       <div className="max-w-3xl mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-brand-navy text-center mb-12">
+        <h2 className="animate-fade-in text-3xl md:text-4xl font-bold text-brand-navy text-center mb-12">
           Perguntas Frequentes
         </h2>
 
         <div className="space-y-3 mb-8">
-          {faqs.map((faq) => (
+          {faqs.map((faq, idx) => (
             <div
               key={faq.id}
-              className="bg-white rounded-lg overflow-hidden shadow-sm"
+              className="animate-slide-up bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 border border-gray-100 hover:border-brand-blue"
+              style={{ animationDelay: `${idx * 50}ms` }}
             >
               {/* Question Button */}
               <button
                 onClick={() => setOpenId(openId === faq.id ? null : faq.id)}
-                className="w-full flex items-center justify-between p-5 md:p-6 hover:bg-gray-50 transition-colors text-left"
+                className="w-full flex items-center justify-between p-5 md:p-6 hover:bg-blue-50 transition-colors duration-300 text-left group"
               >
-                <span className="font-semibold text-brand-navy text-lg">
+                <span className="font-semibold text-brand-navy text-lg group-hover:text-brand-blue transition-colors duration-300">
                   {faq.question}
                 </span>
                 <ChevronDown
-                  className={`w-5 h-5 text-brand-blue flex-shrink-0 transition-transform ${
+                  className={`w-5 h-5 text-brand-blue flex-shrink-0 transition-transform duration-300 ${
                     openId === faq.id ? "rotate-180" : ""
                   }`}
                 />
@@ -73,7 +74,7 @@ export function FAQAccordion() {
 
               {/* Answer */}
               {openId === faq.id && (
-                <div className="px-5 md:px-6 pb-5 md:pb-6 text-gray-700 border-t border-gray-100">
+                <div className="px-5 md:px-6 pb-5 md:pb-6 text-gray-700 border-t border-gray-100 animate-slide-down bg-blue-50">
                   {faq.answer}
                 </div>
               )}
@@ -82,7 +83,7 @@ export function FAQAccordion() {
         </div>
 
         {/* Final CTA */}
-        <div className="text-center bg-white rounded-lg p-6 shadow-sm">
+        <div className="animate-fade-in text-center bg-white rounded-lg p-6 shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300" style={{ animationDelay: "0.3s" }}>
           <p className="font-semibold text-brand-navy mb-4">
             Ainda tem dúvidas?
           </p>
@@ -90,7 +91,7 @@ export function FAQAccordion() {
             href="https://wa.me/5562996148873?text=Tenho%20uma%20d%C3%BAvida%20sobre%20os%20colch%C3%B5es%20Ortobom"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-brand-green text-white font-bold rounded-lg hover:bg-green-700 transition-colors"
+            className="inline-flex items-center gap-2 px-6 py-3 bg-brand-green text-white font-bold rounded-lg hover:bg-green-700 hover:shadow-lg hover:scale-105 transition-all duration-300"
           >
             <MessageCircle className="w-4 h-4" />
             Falar com consultor agora
