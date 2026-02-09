@@ -1,11 +1,9 @@
-import { Header } from "@/components/Header";
 import { HeroCarousel } from "@/components/HeroCarousel";
 import { CategoryHighlights } from "@/components/CategoryHighlights";
 import { ProductCard } from "@/components/ProductCard";
 import { Testimonials } from "@/components/Testimonials";
 import { CTASection } from "@/components/CTASection";
 import { ContactInfo } from "@/components/ContactInfo";
-import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 const colchoesProducts = [
