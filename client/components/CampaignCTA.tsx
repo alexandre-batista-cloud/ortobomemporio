@@ -6,7 +6,7 @@ export function CampaignCTA() {
       <div className="max-w-4xl mx-auto px-4 md:px-6">
         {/* Section Header */}
         <div className="animate-fade-in text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-brand-navy mb-3">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-brand-navy mb-3">
             Pronto para Transformar seu Sono?
           </h2>
           <p className="animate-slide-up text-gray-700 text-lg" style={{ animationDelay: "0.1s" }}>
