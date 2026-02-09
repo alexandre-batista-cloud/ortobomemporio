@@ -151,10 +151,6 @@ const roupasDeCamaProducts = [
 export default function Index() {
   return (
     <div className="min-h-screen bg-white">
-      <Header />
-      
-      {/* Spacer for fixed header - adjusting for header height */}
-      <div className="h-[176px]" />
 
       <HeroCarousel />
 
