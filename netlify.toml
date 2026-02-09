@@ -1,4 +1,3 @@
-
 [build]
-  publish = "dist"
+  publish = "dist/spa"
   command = "pnpm run build"
