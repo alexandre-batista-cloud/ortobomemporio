@@ -28,12 +28,13 @@ export function MattressTable() {
 
         {/* Table */}
         <div className="animate-slide-up overflow-x-auto mb-8 rounded-lg border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-300" style={{ animationDelay: "0.1s" }}>
-          <table className="w-full border-collapse">
+          <table className="w-full border-collapse text-sm md:text-base">
             <thead>
               <tr className="bg-gradient-to-r from-brand-blue to-blue-700 text-white">
-                <th className="p-4 text-left font-bold">Sensação</th>
-                <th className="p-4 text-left font-bold">Ideal para</th>
-                <th className="p-4 text-left font-bold">Benefício</th>
+                <th className="p-2 md:p-4 text-left font-bold">Sensação</th>
+                <th className="p-2 md:p-4 text-left font-bold hidden md:table-cell">Ideal para</th>
+                <th className="p-2 md:p-4 text-left font-bold hidden md:table-cell">Benefício</th>
+                <th className="p-2 md:p-4 text-left font-bold md:hidden">Detalhes</th>
               </tr>
             </thead>
             <tbody>
@@ -42,14 +43,17 @@ export function MattressTable() {
                   key={idx}
                   className={`group transition-all duration-300 hover:bg-blue-50 cursor-pointer ${idx % 2 === 0 ? "bg-white" : "bg-brand-beige"}`}
                 >
-                  <td className="p-4 font-semibold text-brand-navy border-b border-gray-200 group-hover:text-brand-blue transition-colors duration-300">
+                  <td className="p-2 md:p-4 font-semibold text-brand-navy border-b border-gray-200 group-hover:text-brand-blue transition-colors duration-300">
                     {mattress.firmness}
                   </td>
-                  <td className="p-4 text-gray-700 border-b border-gray-200 group-hover:text-brand-navy transition-colors duration-300">
+                  <td className="p-2 md:p-4 text-gray-700 border-b border-gray-200 group-hover:text-brand-navy transition-colors duration-300 hidden md:table-cell">
                     {mattress.ideal}
                   </td>
-                  <td className="p-4 text-gray-700 border-b border-gray-200 group-hover:text-brand-navy transition-colors duration-300">
+                  <td className="p-2 md:p-4 text-gray-700 border-b border-gray-200 group-hover:text-brand-navy transition-colors duration-300 hidden md:table-cell">
                     {mattress.benefit}
+                  </td>
+                  <td className="p-2 md:p-4 text-gray-700 border-b border-gray-200 group-hover:text-brand-navy transition-colors duration-300 md:hidden text-xs">
+                    {mattress.ideal} - {mattress.benefit}
                   </td>
                 </tr>
               ))}
