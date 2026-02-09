@@ -60,13 +60,13 @@ export function FAQAccordion() {
               {/* Question Button */}
               <button
                 onClick={() => setOpenId(openId === faq.id ? null : faq.id)}
-                className="w-full flex items-center justify-between p-5 md:p-6 hover:bg-blue-50 transition-colors duration-300 text-left group"
+                className="w-full flex items-center justify-between p-4 md:p-6 hover:bg-blue-50 transition-colors duration-300 text-left group"
               >
-                <span className="font-semibold text-brand-navy text-lg group-hover:text-brand-blue transition-colors duration-300">
+                <span className="font-semibold text-brand-navy text-base md:text-lg group-hover:text-brand-blue transition-colors duration-300">
                   {faq.question}
                 </span>
                 <ChevronDown
-                  className={`w-5 h-5 text-brand-blue flex-shrink-0 transition-transform duration-300 ${
+                  className={`w-4 md:w-5 h-4 md:h-5 text-brand-blue flex-shrink-0 transition-transform duration-300 ml-3 ${
                     openId === faq.id ? "rotate-180" : ""
                   }`}
                 />
@@ -74,7 +74,7 @@ export function FAQAccordion() {
 
               {/* Answer */}
               {openId === faq.id && (
-                <div className="px-5 md:px-6 pb-5 md:pb-6 text-gray-700 border-t border-gray-100 animate-slide-down bg-blue-50">
+                <div className="px-4 md:px-6 pb-4 md:pb-6 text-sm md:text-base text-gray-700 border-t border-gray-100 animate-slide-down bg-blue-50">
                   {faq.answer}
                 </div>
               )}
