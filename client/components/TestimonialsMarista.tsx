@@ -235,11 +235,11 @@ export function TestimonialsMarista() {
             {popularProducts.map((product, index) => (
               <div
                 key={product.name}
-                className="group relative bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden animate-slide-up"
-                style={{ animationDelay: `${index * 50}ms` }}
+                className="group relative bg-white rounded-2xl p-6 shadow-md hover:shadow-xl hover:scale-105 transition-all duration-300 border border-gray-100 hover:border-brand-blue overflow-hidden animate-slide-up"
+                style={{ animationDelay: `${(index + 1) * 50}ms` }}
               >
                 {/* Gradient overlay on hover */}
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
                 {/* Image Container */}
                 <div className="relative mb-4 h-40 flex items-center justify-center bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl overflow-hidden">
@@ -252,7 +252,7 @@ export function TestimonialsMarista() {
                 </div>
 
                 {/* Product Name */}
-                <p className="font-bold text-brand-navy text-center text-sm relative z-10 group-hover:text-brand-blue transition-colors">
+                <p className="font-bold text-brand-navy text-center text-sm relative z-10 group-hover:text-brand-blue transition-colors duration-300">
                   {product.name}
                 </p>
               </div>
