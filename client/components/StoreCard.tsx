@@ -70,22 +70,24 @@ export function StoreCard() {
             </div>
 
             {/* Buttons */}
-            <div className="animate-slide-up flex flex-col md:flex-row gap-4 mt-8" style={{ animationDelay: "0.25s" }}>
+            <div className="animate-slide-up flex flex-col md:flex-row gap-3 md:gap-4 mt-8" style={{ animationDelay: "0.25s" }}>
               <a
                 href="https://maps.app.goo.gl/ET9kAgcG1nRUhWj26"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 flex items-center justify-center gap-2 px-6 py-4 bg-white border-2 border-brand-blue text-brand-blue font-bold rounded-lg hover:bg-blue-50 hover:shadow-md hover:scale-105 transition-all duration-300"
+                className="flex-1 flex items-center justify-center gap-2 px-4 md:px-6 py-3 md:py-4 bg-white border-2 border-brand-blue text-brand-blue font-bold text-sm md:text-base rounded-lg hover:bg-blue-50 hover:shadow-md hover:scale-105 transition-all duration-300"
               >
-                <MapPin className="w-5 h-5" />
-                Abrir no Google Maps
+                <MapPin className="w-4 md:w-5 h-4 md:h-5" />
+                <span className="hidden md:inline">Abrir no Google Maps</span>
+                <span className="md:hidden">Google Maps</span>
               </a>
               <button
                 onClick={() => setShowBookingForm(true)}
-                className="flex-1 flex items-center justify-center gap-2 px-6 py-4 bg-brand-blue text-white font-bold rounded-lg hover:bg-blue-700 hover:shadow-lg hover:scale-105 transition-all duration-300"
+                className="flex-1 flex items-center justify-center gap-2 px-4 md:px-6 py-3 md:py-4 bg-brand-blue text-white font-bold text-sm md:text-base rounded-lg hover:bg-blue-700 hover:shadow-lg hover:scale-105 transition-all duration-300"
               >
-                <Calendar className="w-5 h-5" />
-                Agendar visita
+                <Calendar className="w-4 md:w-5 h-4 md:h-5" />
+                <span className="hidden md:inline">Agendar visita</span>
+                <span className="md:hidden">Agendar</span>
               </button>
             </div>
           </div>
