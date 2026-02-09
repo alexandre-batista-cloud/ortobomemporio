@@ -49,14 +49,14 @@ export function HeroMarista() {
 
             {/* Main Heading - Benefit-focused */}
             <h1
-              className="animate-slide-up text-5xl md:text-6xl lg:text-7xl font-bold text-brand-navy leading-tight"
+              className="animate-slide-up text-4xl md:text-5xl lg:text-6xl font-bold text-brand-navy leading-tight"
               style={{ marginTop: "-3px" }}
             >
               Durma Melhor. Viva Melhor.
             </h1>
 
             {/* Subheading */}
-            <h2 className="text-2xl md:text-3xl font-semibold text-gray-800">
+            <h2 className="text-lg md:text-2xl lg:text-3xl font-semibold text-gray-800">
               Colchões Ortobom que eliminam até 70% das dores nas costas.
             </h2>
 
