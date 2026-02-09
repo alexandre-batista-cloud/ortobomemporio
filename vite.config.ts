@@ -1,6 +1,6 @@
 import { defineConfig, Plugin } from "vite";
 import react from "@vitejs/plugin-react-swc";
-import prerender from 'vite-plugin-prerender';
+// import prerender from 'vite-plugin-prerender'; // ← COMENTAR
 import path from "path";
 import { createServer } from "./server";
 
@@ -19,22 +19,7 @@ export default defineConfig(({ mode }) => ({
   },
   plugins: [
     react(),
-    prerender({
-      staticDir: path.join(__dirname, 'dist/spa'),
-      routes: ['/'],
-      renderer: '@prerenderer/renderer-puppeteer',
-      server: {
-        port: 8080,
-        host: 'localhost',
-        prefix: '/'
-      },
-      postProcess(renderedRoute) {
-        renderedRoute.html = renderedRoute.html
-          .replace(/http:/i, 'https:')
-          .replace(/(https:\/\/)?(localhost|127\.0\.0\.1):\d*/i, 'https://ortobomgoiania.com.br');
-        return renderedRoute;
-      }
-    }),
+    // prerender({ ... }), // ← COMENTAR TUDO ISSO
     expressPlugin()
   ],
   resolve: {
@@ -48,11 +33,9 @@ export default defineConfig(({ mode }) => ({
 function expressPlugin(): Plugin {
   return {
     name: "express-plugin",
-    apply: "serve", // Only apply during development (serve mode)
+    apply: "serve",
     configureServer(server) {
       const app = createServer();
-
-      // Add Express app as middleware to Vite dev server
       server.middlewares.use(app);
     },
   };
